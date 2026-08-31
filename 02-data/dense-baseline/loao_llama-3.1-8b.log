@@ -1,0 +1,14 @@
+======================================================================================
+LEAVE-ONE-ATTACK-OUT transfer [DENSE (residual-only)] (layer chosen from training attacks only)
+======================================================================================
+  llama-3.1-8b          
+    residual PAP=0.74  hill=0.63  prefill=0.50  roleplay=0.51
+--------------------------------------------------------------------------------------
+POOLED leave-one-attack-out balanced accuracy (4 held-out cells, chance 0.50):
+  residual: median 0.569  95% CI [0.500, 0.745]  range [0.50, 0.74]
+
+per held-out attack (median over models, 95% CI):
+  held-out PAP       residual 0.745 [0.74,0.74]
+  held-out hill      residual 0.631 [0.63,0.63]
+  held-out prefill   residual 0.500 [0.50,0.50]
+  held-out roleplay  residual 0.507 [0.51,0.51]

@@ -1,0 +1,35 @@
+/usr/local/lib/python3.12/dist-packages/sklearn/decomposition/_pca.py:779: RuntimeWarning: invalid value encountered in divide
+  self.explained_variance_ratio_ = self.explained_variance_ / total_var
+/usr/local/lib/python3.12/dist-packages/sklearn/decomposition/_pca.py:779: RuntimeWarning: invalid value encountered in divide
+  self.explained_variance_ratio_ = self.explained_variance_ / total_var
+======================================================================================
+LEAVE-ONE-ATTACK-OUT transfer (layer chosen from training attacks only)
+======================================================================================
+  deepseek-moe-16b-chat 
+    routing  PAP=0.56  hill=0.48  prefill=0.52  roleplay=0.31
+    residual PAP=0.50  hill=0.61  prefill=0.50  roleplay=0.46
+  deepseek-v2-lite      
+    routing  PAP=0.90  hill=0.75  prefill=0.50  roleplay=0.52
+    residual PAP=0.93  hill=0.75  prefill=0.50  roleplay=0.73
+  llama-4-scout         
+    routing  PAP=0.69  hill=0.73  prefill=0.58  roleplay=0.47
+    residual PAP=0.48  hill=0.79  prefill=0.52  roleplay=0.96
+  mixtral-8x7b          
+    routing  PAP=0.54  hill=0.49  prefill=0.49  roleplay=0.50
+    residual PAP=0.76  hill=0.75  prefill=0.53  roleplay=0.48
+  olmoe-1b-7b           
+    routing  PAP=0.75  hill=0.78  prefill=0.50  roleplay=0.51
+    residual PAP=0.88  hill=0.69  prefill=0.51  roleplay=0.54
+  qwen1.5-moe-a2.7b-chat
+    routing  PAP=0.62  hill=0.61  prefill=0.50  roleplay=0.52
+    residual PAP=0.66  hill=0.69  prefill=0.50  roleplay=0.62
+--------------------------------------------------------------------------------------
+POOLED leave-one-attack-out balanced accuracy (24 held-out cells, chance 0.50):
+  routing : median 0.522  95% CI [0.497, 0.610]  range [0.31, 0.90]
+  residual: median 0.617  95% CI [0.508, 0.727]  range [0.46, 0.96]
+
+per held-out attack (median over models, 95% CI):
+  held-out PAP       routing 0.655 [0.55,0.83]   residual 0.711 [0.49,0.91]
+  held-out hill      routing 0.668 [0.48,0.77]   residual 0.722 [0.65,0.77]
+  held-out prefill   routing 0.497 [0.49,0.55]   residual 0.505 [0.50,0.53]
+  held-out roleplay  routing 0.501 [0.39,0.52]   residual 0.578 [0.47,0.84]

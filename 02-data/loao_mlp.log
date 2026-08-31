@@ -1,0 +1,46 @@
+========================================================================================
+LEAVE-ONE-ATTACK-OUT transfer, MLP probe (hidden=64, alpha=1e-03)
+========================================================================================
+/usr/local/lib/python3.12/dist-packages/sklearn/decomposition/_pca.py:779: RuntimeWarning: invalid value encountered in divide
+  self.explained_variance_ratio_ = self.explained_variance_ / total_var
+/usr/local/lib/python3.12/dist-packages/sklearn/decomposition/_pca.py:779: RuntimeWarning: invalid value encountered in divide
+  self.explained_variance_ratio_ = self.explained_variance_ / total_var
+/usr/local/lib/python3.12/dist-packages/sklearn/decomposition/_pca.py:779: RuntimeWarning: invalid value encountered in divide
+  self.explained_variance_ratio_ = self.explained_variance_ / total_var
+/usr/local/lib/python3.12/dist-packages/sklearn/decomposition/_pca.py:779: RuntimeWarning: invalid value encountered in divide
+  self.explained_variance_ratio_ = self.explained_variance_ / total_var
+  deepseek-moe-16b-chat
+    within   routing  PAP=0.63  hill=0.68  prefill=0.59  roleplay=0.74
+    LOAO     routing  PAP=0.57  hill=0.52  prefill=0.53  roleplay=0.38
+    LOAO     residual PAP=0.50  hill=0.50  prefill=0.50  roleplay=0.50
+  deepseek-v2-lite
+    within   routing  PAP=0.93  hill=0.91  prefill=0.89  roleplay=0.96
+    LOAO     routing  PAP=0.89  hill=0.77  prefill=0.50  roleplay=0.69
+    LOAO     residual PAP=0.87  hill=0.77  prefill=0.50  roleplay=0.66
+  llama-4-scout
+    within   routing  PAP=0.81  hill=0.92  prefill=0.71  roleplay=0.98
+    LOAO     routing  PAP=0.51  hill=0.66  prefill=0.46  roleplay=0.52
+    LOAO     residual PAP=0.76  hill=0.57  prefill=0.52  roleplay=0.50
+  mixtral-8x7b
+    within   routing  PAP=0.71  hill=0.92  prefill=0.69  roleplay=0.94
+    LOAO     routing  PAP=0.51  hill=0.46  prefill=0.53  roleplay=0.48
+    LOAO     residual PAP=0.80  hill=0.88  prefill=0.42  roleplay=0.43
+  olmoe-1b-7b
+    within   routing  PAP=0.93  hill=0.89  prefill=0.72  roleplay=0.99
+    LOAO     routing  PAP=0.73  hill=0.82  prefill=0.50  roleplay=0.50
+    LOAO     residual PAP=0.57  hill=0.61  prefill=0.50  roleplay=0.67
+  qwen1.5-moe-a2.7b-chat
+    within   routing  PAP=0.76  hill=0.78  prefill=0.56  roleplay=0.80
+    LOAO     routing  PAP=0.66  hill=0.70  prefill=0.50  roleplay=0.46
+    LOAO     residual PAP=0.74  hill=0.73  prefill=0.49  roleplay=0.42
+----------------------------------------------------------------------------------------
+POOLED MLP leave-one-attack-out balanced accuracy (24 held-out cells, chance 0.50):
+  within  routing : median 0.805  95% CI [0.720, 0.923]
+  LOAO    routing : median 0.518  95% CI [0.500, 0.655]
+  LOAO    residual: median 0.543  95% CI [0.500, 0.665]
+
+per held-out attack, MLP LOAO (median over models, 95% CI):
+  held-out PAP       routing 0.616 [0.51,0.81]   residual 0.754 [0.53,0.83]
+  held-out hill      routing 0.675 [0.49,0.79]   residual 0.671 [0.54,0.82]
+  held-out prefill   routing 0.500 [0.48,0.53]   residual 0.499 [0.45,0.51]
+  held-out roleplay  routing 0.492 [0.42,0.60]   residual 0.502 [0.43,0.66]

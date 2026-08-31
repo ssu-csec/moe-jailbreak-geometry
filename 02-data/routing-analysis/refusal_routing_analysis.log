@@ -1,0 +1,90 @@
+routing-dir: ./data/cache_moe_routing  (8 models)
+
+============================================================================================
+PART A -- routing participation ratio (effective dim of router-logit cloud), n-controlled
+  v2 mirror: is refused-routing PR attack-flat while complied-routing PR swings?
+============================================================================================
+  model                   Lpk  nsub   PR refused (by attack)             spread
+  deepseek-moe-16b-chat     2   147   R: PAP=1.3  hill=1.3  pref=2.9  role=1.2
+                                      C: PAP=1.2  hill=1.2  pref=3.0  role=1.2
+                          -> refused PR spread 1.8   complied PR spread 1.9   (refused flatter)
+  deepseek-v2-lite         20    76   R: PAP=5.4  hill=3.3  pref=8.2  role=8.8
+                                      C: PAP=7.9  hill=6.7  pref=8.1  role=3.3
+                          -> refused PR spread 5.5   complied PR spread 4.8   (complied flatter)
+  gpt-oss-20b              23    55   R: PAP=1.2  hill=1.3
+                                      C: PAP=1.1  hill=1.2
+                          -> refused PR spread 0.1   complied PR spread 0.1   (complied flatter)
+  llama-4-scout            36   150   R: PAP=5.9  hill=7.0  pref=5.2  role=6.2
+                                      C: PAP=4.3  hill=4.2  pref=4.5  role=3.9
+                          -> refused PR spread 1.8   complied PR spread 0.6   (complied flatter)
+  mixtral-8x7b             23    51   R: PAP=4.1  hill=4.6  pref=4.4  role=2.2
+                                      C: PAP=5.1  hill=4.3  pref=4.5  role=2.4
+                          -> refused PR spread 2.4   complied PR spread 2.7   (refused flatter)
+  olmoe-1b-7b              14   138   R: PAP=6.2  hill=3.6  pref=3.8  role=2.3
+                                      C: PAP=5.6  hill=4.9  pref=3.5  role=3.6
+                          -> refused PR spread 3.9   complied PR spread 2.1   (complied flatter)
+  phi-3.5-moe-instruct     17   150   R: PAP=1.1  hill=1.1  role=1.4
+                                      C: PAP=1.2  hill=1.5  role=1.5
+                          -> refused PR spread 0.3   complied PR spread 0.3   (refused flatter)
+  qwen1.5-moe-a2.7b-chat   23   116   R: PAP=6.9  hill=4.0  pref=7.4  role=7.3
+                                      C: PAP=7.8  hill=8.7  pref=6.2  role=8.3
+                          -> refused PR spread 3.4   complied PR spread 2.5   (complied flatter)
+  POOLED: median refused-PR spread 2.10  complied-PR spread 1.98  (3/8 models refused flatter)
+
+============================================================================================
+PART B -- cross-attack centroid movement (router logits), normalized by refused-complied gap
+  small = attack-stable. attributes the cross-attack transfer failure.
+============================================================================================
+  model                       gap  dR (refused move)  dC (complied move)
+  deepseek-moe-16b-chat      2.30               3.93                3.55   complied more stable
+  deepseek-v2-lite           2.40               0.99                1.63   refused more stable
+  gpt-oss-20b                0.32               2.34                0.76   complied more stable
+  llama-4-scout              2.44               1.17                1.46   refused more stable
+  mixtral-8x7b               1.37               1.29                1.36   refused more stable
+  olmoe-1b-7b                2.26               1.40                2.22   refused more stable
+  phi-3.5-moe-instruct       2.08               1.48                0.81   complied more stable
+  qwen1.5-moe-a2.7b-chat     1.41               2.30                2.89   refused more stable
+  POOLED median: dR 1.44  dC 1.54  (5/8 models: refused moves less)
+
+============================================================================================
+PART C -- refusal expert set (top-8 experts refused over-selects) and its cross-attack overlap
+  Jaccard over the 4 attacks: 1.0 = identical refusal-expert set, 0 = disjoint
+============================================================================================
+  deepseek-moe-16b-chat  mean pairwise Jaccard = 0.35
+                           PAP       experts [1, 2, 6, 20, 22, 31, 41, 62]
+                           hill      experts [1, 2, 3, 6, 20, 22, 31, 62]
+                           prefill   experts [0, 1, 4, 20, 31, 41, 55, 60]
+                           roleplay  experts [0, 1, 2, 4, 25, 43, 55, 60]
+  deepseek-v2-lite       mean pairwise Jaccard = 0.27
+                           PAP       experts [12, 17, 27, 30, 42, 48, 54, 61]
+                           hill      experts [12, 17, 27, 36, 48, 49, 54, 55]
+                           prefill   experts [21, 27, 39, 40, 42, 48, 49, 55]
+                           roleplay  experts [12, 21, 30, 44, 54, 55, 59, 62]
+  gpt-oss-20b            mean pairwise Jaccard = 1.00
+                           PAP       experts [0, 1, 2, 3, 4, 5, 6, 7]
+                           hill      experts [0, 1, 2, 3, 4, 5, 6, 7]
+  llama-4-scout          mean pairwise Jaccard = 0.89
+                           PAP       experts [0, 1, 2, 3, 4, 5, 6, 7]
+                           hill      experts [0, 1, 2, 3, 5, 6, 7, 8]
+                           prefill   experts [0, 1, 2, 3, 4, 5, 6, 7]
+                           roleplay  experts [0, 1, 2, 3, 4, 5, 6, 7]
+  mixtral-8x7b           mean pairwise Jaccard = 1.00
+                           PAP       experts [0, 1, 2, 3, 4, 5, 6, 7]
+                           hill      experts [0, 1, 2, 3, 4, 5, 6, 7]
+                           prefill   experts [0, 1, 2, 3, 4, 5, 6, 7]
+                           roleplay  experts [0, 1, 2, 3, 4, 5, 6, 7]
+  olmoe-1b-7b            mean pairwise Jaccard = 0.59
+                           PAP       experts [0, 1, 2, 3, 4, 42, 45, 60]
+                           hill      experts [0, 1, 2, 4, 5, 11, 45, 60]
+                           prefill   experts [0, 1, 2, 4, 5, 6, 11, 24]
+                           roleplay  experts [0, 1, 2, 4, 5, 6, 11, 45]
+  phi-3.5-moe-instruct   mean pairwise Jaccard = 1.00
+                           PAP       experts [0, 1, 2, 3, 4, 5, 6, 7]
+                           hill      experts [0, 1, 2, 3, 4, 5, 6, 7]
+                           roleplay  experts [0, 1, 2, 3, 4, 5, 6, 7]
+  qwen1.5-moe-a2.7b-chat mean pairwise Jaccard = 0.33
+                           PAP       experts [0, 1, 2, 4, 5, 31, 54, 58]
+                           hill      experts [0, 1, 4, 5, 23, 31, 40, 54]
+                           prefill   experts [0, 1, 2, 3, 4, 5, 6, 31]
+                           roleplay  experts [5, 7, 20, 26, 28, 39, 40, 58]
+  POOLED median Jaccard = 0.74   (high = attack-invariant refusal-expert set)

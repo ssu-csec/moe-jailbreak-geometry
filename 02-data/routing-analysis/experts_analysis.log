@@ -1,0 +1,189 @@
+  loaded deepseek-moe-16b-chat    PAP      
+  loaded deepseek-moe-16b-chat    hill     
+  loaded deepseek-moe-16b-chat    prefill  
+  loaded deepseek-moe-16b-chat    roleplay 
+  loaded deepseek-v2-lite         PAP      
+  loaded deepseek-v2-lite         hill     
+  loaded deepseek-v2-lite         prefill  
+  loaded deepseek-v2-lite         roleplay 
+  loaded gpt-oss-20b              PAP      
+  loaded gpt-oss-20b              hill     
+  loaded gpt-oss-20b              prefill    (too few -> skipped)
+  loaded gpt-oss-20b              roleplay   (too few -> skipped)
+  loaded llama-4-scout            PAP      
+  loaded llama-4-scout            hill     
+  loaded llama-4-scout            prefill  
+  loaded llama-4-scout            roleplay 
+  loaded mixtral-8x7b             PAP      
+  loaded mixtral-8x7b             hill     
+  loaded mixtral-8x7b             prefill  
+  loaded mixtral-8x7b             roleplay 
+  loaded olmoe-1b-7b              PAP      
+  loaded olmoe-1b-7b              hill     
+  loaded olmoe-1b-7b              prefill  
+  loaded olmoe-1b-7b              roleplay 
+  loaded phi-3.5-moe-instruct     PAP      
+  loaded phi-3.5-moe-instruct     hill     
+  loaded phi-3.5-moe-instruct     prefill    (too few -> skipped)
+  loaded phi-3.5-moe-instruct     roleplay 
+  loaded qwen1.5-moe-a2.7b-chat   PAP      
+  loaded qwen1.5-moe-a2.7b-chat   hill     
+  loaded qwen1.5-moe-a2.7b-chat   prefill  
+  loaded qwen1.5-moe-a2.7b-chat   roleplay 
+
+================================================================================================
+PART 1 -- SPARSITY: how many experts recover the within-attack signal
+  top-N = probe restricted to the N most discriminative experts (selected on train folds)
+================================================================================================
+  model                  attack      L*  top1   top2   top3   top5   top8   top12   allE  top3/all
+  deepseek-moe-16b-chat  PAP          1   0.62   0.62   0.61   0.64   0.62   0.62   0.65    0.75
+  deepseek-moe-16b-chat  hill         0   0.59   0.62   0.63   0.66   0.67   0.66   0.68    0.76
+  deepseek-moe-16b-chat  prefill     21   0.56   0.55   0.58   0.57   0.59   0.56   0.62    0.66
+  deepseek-moe-16b-chat  roleplay    26   0.63   0.64   0.66   0.65   0.64   0.65   0.75    0.63
+  deepseek-v2-lite       PAP         20   0.92   0.92   0.92   0.93   0.94   0.94   0.97    0.89
+  deepseek-v2-lite       hill        21   0.79   0.82   0.83   0.82   0.89   0.89   0.96    0.72
+  deepseek-v2-lite       prefill      6   0.82   0.85   0.86   0.85   0.84   0.87   0.88    0.93
+  deepseek-v2-lite       roleplay    21   0.92   0.92   0.94   0.99   0.99   1.00   1.00    0.89
+  gpt-oss-20b            PAP         19   0.72   0.74   0.73   0.76   0.80   0.85   0.96    0.50
+  gpt-oss-20b            hill        16   0.82   0.91   0.89   0.90   0.93   0.95   0.97    0.83
+  llama-4-scout          PAP         45   0.71   0.75   0.79   0.78   0.82   0.85   0.86    0.80
+  llama-4-scout          hill        33   0.73   0.79   0.86   0.88   0.94   0.96   0.97    0.77
+  llama-4-scout          prefill     25   0.69   0.70   0.75   0.76   0.75   0.78   0.75    0.97
+  llama-4-scout          roleplay     1   1.00   1.00   1.00   1.00   1.00   0.99   1.00    0.99
+  mixtral-8x7b           PAP          8   0.74   0.80   0.81   0.82   0.85   0.85   0.85    0.88
+  mixtral-8x7b           hill         9   0.77   0.89   0.90   0.95   0.94   0.94   0.94    0.91
+  mixtral-8x7b           prefill     13   0.62   0.67   0.68   0.67   0.70   0.70   0.70    0.90
+  mixtral-8x7b           roleplay    30   0.79   0.83   0.95   0.96   0.97   0.97   0.97    0.97
+  olmoe-1b-7b            PAP         13   0.87   0.91   0.90   0.91   0.91   0.92   0.97    0.86
+  olmoe-1b-7b            hill        11   0.84   0.84   0.86   0.89   0.90   0.92   0.96    0.78
+  olmoe-1b-7b            prefill      7   0.59   0.65   0.65   0.65   0.66   0.69   0.79    0.52
+  olmoe-1b-7b            roleplay     0   1.00   1.00   1.00   1.00   1.00   1.00   1.00    1.00
+  phi-3.5-moe-instruct   PAP         20   0.76   0.77   0.77   0.80   0.79   0.80   0.81    0.90
+  phi-3.5-moe-instruct   hill        19   0.64   0.66   0.67   0.70   0.72   0.73   0.75    0.66
+  phi-3.5-moe-instruct   roleplay    31   0.90   0.90   0.90   0.90   0.90   0.90   0.91    0.98
+  qwen1.5-moe-a2.7b-chat PAP         23   0.67   0.70   0.72   0.74   0.75   0.75   0.80    0.75
+  qwen1.5-moe-a2.7b-chat hill        17   0.70   0.71   0.73   0.74   0.75   0.77   0.80    0.76
+  qwen1.5-moe-a2.7b-chat prefill     17   0.60   0.61   0.61   0.60   0.65   0.64   0.66    0.73
+  qwen1.5-moe-a2.7b-chat roleplay    19   0.72   0.73   0.74   0.75   0.76   0.79   0.83    0.71
+  top3/all = fraction of the above-chance signal recovered by just 3 experts
+
+================================================================================================
+PART 2 -- CONSISTENCY: is the discriminative expert set shared across attacks?
+  Pearson r of per-expert Cohen-d vectors between attacks, at each model's global layer
+================================================================================================
+  deepseek-moe-16b-chat   (global layer L0)
+    PAP       hill:+0.64  prefill:+0.14  roleplay:-0.54
+    hill      PAP:+0.64  prefill:-0.05  roleplay:-0.66
+    prefill   PAP:+0.14  hill:-0.05  roleplay:+0.35
+    roleplay  PAP:-0.54  hill:-0.66  prefill:+0.35
+    mean r: all-pairs -0.02   semantic-only (PAP/hill/roleplay) -0.18
+  deepseek-v2-lite   (global layer L21)
+    PAP       hill:+0.81  prefill:-0.05  roleplay:+0.67
+    hill      PAP:+0.81  prefill:-0.05  roleplay:+0.50
+    prefill   PAP:-0.05  hill:-0.05  roleplay:+0.02
+    roleplay  PAP:+0.67  hill:+0.50  prefill:+0.02
+    mean r: all-pairs +0.32   semantic-only (PAP/hill/roleplay) +0.66
+  gpt-oss-20b   (global layer L17)
+    PAP       hill:+0.06
+    hill      PAP:+0.06
+    mean r: all-pairs +0.06   semantic-only (PAP/hill/roleplay) +0.06
+  llama-4-scout   (global layer L33)
+    PAP       hill:+0.14  prefill:+0.52  roleplay:+0.17
+    hill      PAP:+0.14  prefill:-0.05  roleplay:-0.19
+    prefill   PAP:+0.52  hill:-0.05  roleplay:+0.26
+    roleplay  PAP:+0.17  hill:-0.19  prefill:+0.26
+    mean r: all-pairs +0.14   semantic-only (PAP/hill/roleplay) +0.04
+  mixtral-8x7b   (global layer L17)
+    PAP       hill:+0.76  prefill:-0.34  roleplay:+0.29
+    hill      PAP:+0.76  prefill:-0.02  roleplay:+0.21
+    prefill   PAP:-0.34  hill:-0.02  roleplay:+0.24
+    roleplay  PAP:+0.29  hill:+0.21  prefill:+0.24
+    mean r: all-pairs +0.19   semantic-only (PAP/hill/roleplay) +0.42
+  olmoe-1b-7b   (global layer L10)
+    PAP       hill:+0.82  prefill:+0.22  roleplay:+0.28
+    hill      PAP:+0.82  prefill:+0.33  roleplay:+0.32
+    prefill   PAP:+0.22  hill:+0.33  roleplay:-0.01
+    roleplay  PAP:+0.28  hill:+0.32  prefill:-0.01
+    mean r: all-pairs +0.33   semantic-only (PAP/hill/roleplay) +0.47
+  phi-3.5-moe-instruct   (global layer L20)
+    PAP       hill:+0.46  roleplay:+0.15
+    hill      PAP:+0.46  roleplay:+0.30
+    roleplay  PAP:+0.15  hill:+0.30
+    mean r: all-pairs +0.30   semantic-only (PAP/hill/roleplay) +0.30
+  qwen1.5-moe-a2.7b-chat   (global layer L17)
+    PAP       hill:+0.41  prefill:+0.02  roleplay:+0.21
+    hill      PAP:+0.41  prefill:+0.33  roleplay:+0.14
+    prefill   PAP:+0.02  hill:+0.33  roleplay:+0.10
+    roleplay  PAP:+0.21  hill:+0.14  prefill:+0.10
+    mean r: all-pairs +0.20   semantic-only (PAP/hill/roleplay) +0.25
+
+================================================================================================
+PART 3 -- DEPTH: is it the same experts across layers (within an attack)?
+================================================================================================
+  deepseek-moe-16b-chat  PAP        mean cross-layer r of the d-vector -0.00  (high = a depth-persistent expert set)
+  deepseek-moe-16b-chat  hill       mean cross-layer r of the d-vector +0.00  (high = a depth-persistent expert set)
+  deepseek-moe-16b-chat  prefill    mean cross-layer r of the d-vector -0.01  (high = a depth-persistent expert set)
+  deepseek-moe-16b-chat  roleplay   mean cross-layer r of the d-vector -0.00  (high = a depth-persistent expert set)
+  deepseek-v2-lite       PAP        mean cross-layer r of the d-vector +0.00  (high = a depth-persistent expert set)
+  deepseek-v2-lite       hill       mean cross-layer r of the d-vector -0.00  (high = a depth-persistent expert set)
+  deepseek-v2-lite       prefill    mean cross-layer r of the d-vector +0.01  (high = a depth-persistent expert set)
+  deepseek-v2-lite       roleplay   mean cross-layer r of the d-vector -0.01  (high = a depth-persistent expert set)
+  gpt-oss-20b            PAP        mean cross-layer r of the d-vector -0.01  (high = a depth-persistent expert set)
+  gpt-oss-20b            hill       mean cross-layer r of the d-vector -0.01  (high = a depth-persistent expert set)
+  llama-4-scout          PAP        mean cross-layer r of the d-vector +0.00  (high = a depth-persistent expert set)
+  llama-4-scout          hill       mean cross-layer r of the d-vector +0.01  (high = a depth-persistent expert set)
+  llama-4-scout          prefill    mean cross-layer r of the d-vector +0.01  (high = a depth-persistent expert set)
+  llama-4-scout          roleplay   mean cross-layer r of the d-vector +0.00  (high = a depth-persistent expert set)
+  mixtral-8x7b           PAP        mean cross-layer r of the d-vector -0.02  (high = a depth-persistent expert set)
+  mixtral-8x7b           hill       mean cross-layer r of the d-vector +0.00  (high = a depth-persistent expert set)
+  mixtral-8x7b           prefill    mean cross-layer r of the d-vector +0.00  (high = a depth-persistent expert set)
+  mixtral-8x7b           roleplay   mean cross-layer r of the d-vector +0.00  (high = a depth-persistent expert set)
+  olmoe-1b-7b            PAP        mean cross-layer r of the d-vector +0.01  (high = a depth-persistent expert set)
+  olmoe-1b-7b            hill       mean cross-layer r of the d-vector -0.01  (high = a depth-persistent expert set)
+  olmoe-1b-7b            prefill    mean cross-layer r of the d-vector -0.02  (high = a depth-persistent expert set)
+  olmoe-1b-7b            roleplay   mean cross-layer r of the d-vector -0.01  (high = a depth-persistent expert set)
+  phi-3.5-moe-instruct   PAP        mean cross-layer r of the d-vector -0.02  (high = a depth-persistent expert set)
+  phi-3.5-moe-instruct   hill       mean cross-layer r of the d-vector +0.00  (high = a depth-persistent expert set)
+  phi-3.5-moe-instruct   roleplay   mean cross-layer r of the d-vector -0.01  (high = a depth-persistent expert set)
+  qwen1.5-moe-a2.7b-chat PAP        mean cross-layer r of the d-vector -0.02  (high = a depth-persistent expert set)
+  qwen1.5-moe-a2.7b-chat hill       mean cross-layer r of the d-vector +0.01  (high = a depth-persistent expert set)
+  qwen1.5-moe-a2.7b-chat prefill    mean cross-layer r of the d-vector -0.01  (high = a depth-persistent expert set)
+  qwen1.5-moe-a2.7b-chat roleplay   mean cross-layer r of the d-vector +0.00  (high = a depth-persistent expert set)
+
+================================================================================================
+PART 4 -- DIRECTION: the expert-space refusal vector + target experts
+  PR = participation ratio of d^2 (low = sparse).  +d: refused-favored, -d: complied-favored
+================================================================================================
+  deepseek-moe-16b-chat  PAP        L1  E= 64  PR= 32.1   top: e36(+0.53)  e10(+0.41)  e7(+0.38)  e39(+0.37)
+  deepseek-moe-16b-chat  hill       L0  E= 64  PR= 31.9   top: e21(-0.67)  e3(+0.64)  e7(+0.64)  e38(-0.63)
+  deepseek-moe-16b-chat  prefill    L21  E= 64  PR= 20.2   top: e39(+0.38)  e34(+0.30)  e11(+0.29)  e57(-0.28)
+  deepseek-moe-16b-chat  roleplay   L26  E= 64  PR= 42.0   top: e56(-0.81)  e11(+0.81)  e54(-0.80)  e29(-0.79)
+  deepseek-v2-lite       PAP        L20  E= 64  PR= 29.8   top: e54(+2.96)  e17(+2.36)  e16(-2.15)  e41(+2.08)
+  deepseek-v2-lite       hill       L21  E= 64  PR= 32.4   top: e39(-1.73)  e20(-1.57)  e33(+1.52)  e46(-1.30)
+  deepseek-v2-lite       prefill    L6  E= 64  PR= 23.4   top: e14(+1.78)  e53(-1.56)  e43(-1.51)  e23(-1.43)
+  deepseek-v2-lite       roleplay   L21  E= 64  PR= 27.2   top: e8(+2.77)  e25(-2.22)  e16(-2.13)  e21(+2.13)
+  gpt-oss-20b            PAP        L19  E= 32  PR= 15.1   top: e10(+1.39)  e25(-1.38)  e9(+1.09)  e29(-1.07)
+  gpt-oss-20b            hill       L16  E= 32  PR= 13.0   top: e2(+2.18)  e28(-2.11)  e1(-1.74)  e29(-1.74)
+  llama-4-scout          PAP        L45  E= 16  PR=  7.8   top: e8(+1.15)  e1(-1.05)  e5(-1.04)  e14(-0.94)
+  llama-4-scout          hill       L33  E= 16  PR=  8.0   top: e12(+1.35)  e8(+1.35)  e11(-1.23)  e2(-0.87)
+  llama-4-scout          prefill    L25  E= 16  PR=  5.1   top: e11(+0.79)  e2(-0.65)  e1(-0.54)  e8(+0.38)
+  llama-4-scout          roleplay   L1  E= 16  PR= 12.1   top: e7(+3.17)  e13(+3.07)  e2(+3.06)  e8(+2.76)
+  mixtral-8x7b           PAP        L8  E=  8  PR=  2.8   top: e0(-1.60)  e1(+1.14)  e5(+0.95)  e7(+0.42)
+  mixtral-8x7b           hill       L9  E=  8  PR=  4.6   top: e4(+1.37)  e7(+1.02)  e5(-0.90)  e3(+0.80)
+  mixtral-8x7b           prefill    L13  E=  8  PR=  3.1   top: e5(+0.72)  e2(-0.48)  e4(-0.32)  e6(+0.29)
+  mixtral-8x7b           roleplay   L30  E=  8  PR=  2.9   top: e1(-1.84)  e7(-1.41)  e6(+1.28)  e3(+0.45)
+  olmoe-1b-7b            PAP        L13  E= 64  PR= 29.5   top: e24(+2.15)  e12(+2.10)  e33(+1.85)  e51(+1.84)
+  olmoe-1b-7b            hill       L11  E= 64  PR= 27.7   top: e35(+2.15)  e34(+2.00)  e20(+1.95)  e3(+1.88)
+  olmoe-1b-7b            prefill    L7  E= 64  PR= 31.1   top: e2(-0.63)  e60(-0.62)  e55(-0.52)  e34(+0.52)
+  olmoe-1b-7b            roleplay   L0  E= 64  PR= 20.8   top: e23(+6.73)  e6(+6.34)  e40(+6.05)  e38(+4.63)
+  phi-3.5-moe-instruct   PAP        L20  E= 16  PR= 10.7   top: e4(+1.34)  e13(+1.18)  e3(+1.18)  e15(+1.17)
+  phi-3.5-moe-instruct   hill       L19  E= 16  PR= 11.6   top: e8(+0.74)  e12(+0.65)  e9(+0.52)  e7(+0.49)
+  phi-3.5-moe-instruct   roleplay   L31  E= 16  PR= 13.3   top: e9(+2.50)  e1(+2.48)  e0(+2.43)  e5(+2.34)
+  qwen1.5-moe-a2.7b-chat PAP        L23  E= 60  PR= 24.8   top: e43(-1.08)  e35(-1.05)  e50(+1.03)  e53(-1.02)
+  qwen1.5-moe-a2.7b-chat hill       L17  E= 60  PR= 19.5   top: e27(+1.05)  e2(+1.02)  e3(+0.89)  e41(-0.82)
+  qwen1.5-moe-a2.7b-chat prefill    L17  E= 60  PR= 21.7   top: e27(+0.60)  e47(+0.51)  e22(+0.51)  e45(-0.48)
+  qwen1.5-moe-a2.7b-chat roleplay   L19  E= 60  PR= 24.4   top: e5(+1.21)  e44(+1.13)  e40(-1.04)  e58(+0.98)
+
+================================================================================================
+SUMMARY: 29 cells.  PART 1 top3/all = is refusal sparse; PART 2 mean r = is the expert set attack-invariant.
+  Both high -> a nameable refusal-expert set -> causal routing-steer experiment is on.

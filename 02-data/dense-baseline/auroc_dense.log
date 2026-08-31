@@ -1,0 +1,17 @@
+===== AUROC (dense, fixed depth, threshold-free) =====
+==============================================================================
+DENSE LOAO -- balanced accuracy vs AUROC (threshold-free) at fixed depth
+models: ['llama-3.1-8b', 'mistral-7b']
+==============================================================================
+
+[mid-50%] pooled (8 cells):  bal-acc median 0.634   AUROC median 0.798
+    held-out PAP       bal-acc 0.696   AUROC 0.800
+    held-out hill      bal-acc 0.634   AUROC 0.832
+    held-out prefill   bal-acc 0.609   AUROC 0.665
+    held-out roleplay  bal-acc 0.525   AUROC 0.561
+
+[late-90%] pooled (8 cells):  bal-acc median 0.648   AUROC median 0.762
+    held-out PAP       bal-acc 0.667   AUROC 0.769
+    held-out hill      bal-acc 0.677   AUROC 0.818
+    held-out prefill   bal-acc 0.590   AUROC 0.687
+    held-out roleplay  bal-acc 0.502   AUROC 0.542

@@ -1,0 +1,16 @@
+  deepseek-moe-16b-chat    layer 0
+  deepseek-v2-lite         layer 21
+  llama-4-scout            layer 33
+  mixtral-8x7b             layer 11
+  olmoe-1b-7b              layer 13
+  qwen1.5-moe-a2.7b-chat   layer 17
+
+cross-attack routing transfer (rows = train attack, cols = test attack),
+median over the six models, chance 0.50:
+                   PAP      hill   prefill  roleplay
+  PAP             0.83      0.70      0.50      0.53
+  hill            0.60      0.91      0.51      0.52
+  prefill         0.47      0.50      0.69      0.51
+  roleplay        0.53      0.51      0.50      0.96
+
+diagonal = within-attack; off-diagonal = single-attack transfer

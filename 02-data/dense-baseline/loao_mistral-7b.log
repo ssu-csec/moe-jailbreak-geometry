@@ -1,0 +1,6 @@
+======================================================================================
+LEAVE-ONE-ATTACK-OUT transfer [DENSE (residual-only)] (layer chosen from training attacks only)
+======================================================================================
+  mistral-7b              fewer than 4 attacks, skipped
+--------------------------------------------------------------------------------------
+[warn] no residual cells collected -- nothing to pool. Check that the npz caches exist and cleared the min-count gate.

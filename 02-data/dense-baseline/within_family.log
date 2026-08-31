@@ -1,0 +1,16 @@
+===== roleplay within-family (cross-template) =====
+WITHIN-FAMILY (cross-template) transfer on roleplay: train on half the templates, test on the other half (symmetric mean)
+  [mid-50%] llama-3.1-8b     bal-acc 0.714  AUROC 0.831  (80 templates; 299 vs 292 prompts)
+  [mid-50%] mistral-7b       bal-acc 0.713  AUROC 0.760  (79 templates; 294 vs 263 prompts)
+  [mid-50%] POOLED median: bal-acc 0.713  AUROC 0.795
+  [late-90%] llama-3.1-8b     bal-acc 0.705  AUROC 0.801  (80 templates; 299 vs 292 prompts)
+  [late-90%] mistral-7b       bal-acc 0.636  AUROC 0.699  (79 templates; 294 vs 263 prompts)
+  [late-90%] POOLED median: bal-acc 0.670  AUROC 0.750
+===== prefill within-family (for reference; 1 template only -> expect skip) =====
+WITHIN-FAMILY (cross-template) transfer on hill: train on half the templates, test on the other half (symmetric mean)
+  [mid-50%] llama-3.1-8b     bal-acc 0.835  AUROC 0.931  (7 templates; 317 vs 204 prompts)
+  [mid-50%] mistral-7b       bal-acc 0.829  AUROC 0.930  (7 templates; 309 vs 205 prompts)
+  [mid-50%] POOLED median: bal-acc 0.832  AUROC 0.931
+  [late-90%] llama-3.1-8b     bal-acc 0.800  AUROC 0.918  (7 templates; 317 vs 204 prompts)
+  [late-90%] mistral-7b       bal-acc 0.769  AUROC 0.883  (7 templates; 309 vs 205 prompts)
+  [late-90%] POOLED median: bal-acc 0.785  AUROC 0.900

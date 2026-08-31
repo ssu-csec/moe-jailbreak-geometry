@@ -1,0 +1,17 @@
+===== 2ND JUDGE: llama-3.1-8b =====
+# second-judge = openai/gpt-4o; cache = out/dataset-permodel/llama-3.1-8b/_cache; n_per_attack = 60
+[PAP] agreement 60/60 = 100.0%  (unusable second-verdicts: 0)
+[hill] agreement 58/60 = 96.7%  (unusable second-verdicts: 0)
+[prefill] agreement 59/60 = 98.3%  (unusable second-verdicts: 0)
+[roleplay] agreement 58/60 = 96.7%  (unusable second-verdicts: 0)
+
+OVERALL agreement: 235/240 = 97.9%  Cohen's kappa = 0.950  (second judge = openai/gpt-4o)
+
+===== 2ND JUDGE: mistral-7b =====
+# second-judge = openai/gpt-4o; cache = out-mistral/dataset-permodel/mistral-7b/_cache; n_per_attack = 60
+[PAP] agreement 49/60 = 81.7%  (unusable second-verdicts: 0)
+[hill] agreement 57/60 = 95.0%  (unusable second-verdicts: 0)
+[prefill] agreement 60/60 = 100.0%  (unusable second-verdicts: 0)
+[roleplay] agreement 57/60 = 95.0%  (unusable second-verdicts: 0)
+
+OVERALL agreement: 223/240 = 92.9%  Cohen's kappa = 0.859  (second judge = openai/gpt-4o)

@@ -1,0 +1,22 @@
+======================================================================================
+LEAVE-ONE-ATTACK-OUT transfer [DENSE (residual-only)] (layer chosen from training attacks only)
+======================================================================================
+  llama-3.1-8b            (L=32, mid=16, late=29)
+    train-best PAP=0.74  hill=0.63  prefill=0.50  roleplay=0.51
+    mid-50%    PAP=0.67  hill=0.63  prefill=0.51  roleplay=0.52
+    late-90%   PAP=0.69  hill=0.71  prefill=0.50  roleplay=0.54
+  mistral-7b              (L=32, mid=16, late=29)
+    train-best PAP=0.73  hill=0.66  prefill=0.71  roleplay=0.58
+    mid-50%    PAP=0.72  hill=0.64  prefill=0.71  roleplay=0.53
+    late-90%   PAP=0.65  hill=0.65  prefill=0.68  roleplay=0.46
+--------------------------------------------------------------------------------------
+POOLED leave-one-attack-out balanced accuracy (8 held-out cells, chance 0.50):
+  residual train-best: median 0.645  95% CI [0.507, 0.726]  range [0.50, 0.74]
+  residual mid-50%   : median 0.632  95% CI [0.521, 0.711]  range [0.51, 0.72]
+  residual late-90%  : median 0.648  95% CI [0.500, 0.685]  range [0.46, 0.71]
+
+per held-out attack (median over models, 95% CI):
+  held-out PAP       residual 0.736 [0.73,0.74]
+  held-out hill      residual 0.645 [0.63,0.66]
+  held-out prefill   residual 0.605 [0.50,0.71]
+  held-out roleplay  residual 0.546 [0.51,0.58]

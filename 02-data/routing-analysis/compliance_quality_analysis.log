@@ -1,0 +1,67 @@
+====================================================================================================
+COMPLIANCE QUALITY  --  judge disagreement (no degeneracy heuristic) vs v2 dimensionality
+====================================================================================================
+  model                  attack     n_both    cov  disagree  soft-comply       RC:CR  PR ratio
+  deepseek-v2-lite       PAP          7523   1.00     0.184        0.452    1021:362      2.53
+  deepseek-v2-lite       hill         7241   1.00     0.125        0.767     803:103      2.65
+  deepseek-v2-lite       prefill      7720   1.00     0.115        0.189      818:68      0.46
+  deepseek-v2-lite       roleplay    30880   1.00     0.109        0.585    3101:271      0.34
+  deepseek-moe-16b-chat  PAP             0  -- judge labels absent or too few, skipped
+  deepseek-moe-16b-chat  hill            0  -- judge labels absent or too few, skipped
+  deepseek-moe-16b-chat  prefill         0  -- judge labels absent or too few, skipped
+  deepseek-moe-16b-chat  roleplay        0  -- judge labels absent or too few, skipped
+  qwen1.5-moe-a2.7b-chat PAP             0  -- judge labels absent or too few, skipped
+  qwen1.5-moe-a2.7b-chat hill            0  -- judge labels absent or too few, skipped
+  qwen1.5-moe-a2.7b-chat prefill         0  -- judge labels absent or too few, skipped
+  qwen1.5-moe-a2.7b-chat roleplay        0  -- judge labels absent or too few, skipped
+  llama-4-scout          PAP          7523   1.00     0.291        0.542    1932:259      1.73
+  llama-4-scout          hill         7241   1.00     0.152        0.717     959:142      1.13
+  llama-4-scout          prefill      7720   1.00     0.133        0.386      945:80      0.80
+  llama-4-scout          roleplay    30880   1.00     0.204        0.407    5750:561      0.37
+  mixtral-8x7b           PAP          7523   1.00     0.263        0.479    1508:467      1.32
+  mixtral-8x7b           hill         7241   1.00     0.159        0.685    1019:135      0.63
+  mixtral-8x7b           prefill      7720   1.00     0.072        0.094     437:119      0.49
+  mixtral-8x7b           roleplay    30880   1.00     0.214        0.309   5146:1470      0.86
+  olmoe-1b-7b            PAP          7523   1.00     0.056        0.713     306:119      1.99
+  olmoe-1b-7b            hill         7241   1.00     0.092        0.839      593:72      1.87
+  olmoe-1b-7b            prefill      7590   1.00     0.189        0.404     1352:85      0.20
+  olmoe-1b-7b            roleplay    30880   1.00     0.058        0.621    1592:204      1.76
+  gpt-oss-20b            PAP          7523   1.00     0.062        0.872      408:61      1.13
+  gpt-oss-20b            hill         7241   1.00     0.172        0.900     1204:44      0.92
+  gpt-oss-20b            prefill      7720   1.00     0.588        0.986      4528:9       nan
+  gpt-oss-20b            roleplay    30880   1.00     0.016        0.972      458:30       nan
+  phi-3.5-moe-instruct   PAP             0  -- judge labels absent or too few, skipped
+  phi-3.5-moe-instruct   hill            0  -- judge labels absent or too few, skipped
+  phi-3.5-moe-instruct   prefill         0  -- judge labels absent or too few, skipped
+  phi-3.5-moe-instruct   roleplay        0  -- judge labels absent or too few, skipped
+
+====================================================================================================
+PART 1 -- per-attack medians  (does the attack set compliance quality?)
+====================================================================================================
+  attack     disagree  soft-comply  PR ratio   n
+  PAP           0.184        0.542      1.73   5
+  hill          0.152        0.767      1.13   5
+  prefill       0.133        0.386      0.47   5
+  roleplay      0.109        0.585      0.61   5
+  (soft-comply high + PR ratio low for the same attack => quality axis)
+
+====================================================================================================
+PART 2 -- link across all cells: low PR ratio <-> soft (judge-ambiguous) compliance?
+====================================================================================================
+  Spearman(PR ratio, soft-comply)  = +0.513   (n=18 cells)
+  Spearman(PR ratio, disagreement) = -0.176
+  negative => the low-dimensional complied cloud is the judge-ambiguous one
+
+====================================================================================================
+PART 3 -- within-model attack ranking (controls for model)
+  Spearman of the 4 attacks' PR-ratio rank vs soft-comply rank, per model
+====================================================================================================
+  deepseek-v2-lite       attacks=['PAP', 'hill', 'prefill', 'roleplay']  Spearman(PR,soft)=+0.40
+  llama-4-scout          attacks=['PAP', 'hill', 'prefill', 'roleplay']  Spearman(PR,soft)=+0.60
+  mixtral-8x7b           attacks=['PAP', 'hill', 'prefill', 'roleplay']  Spearman(PR,soft)=+0.40
+  olmoe-1b-7b            attacks=['PAP', 'hill', 'prefill', 'roleplay']  Spearman(PR,soft)=+0.80
+  median within-model Spearman = +0.50  (0/4 models negative)
+
+====================================================================================================
+READ: if prefill/roleplay show low PR ratio AND high soft-comply while PAP/hill
+show the opposite, the attack sets compliance QUALITY -- a degeneracy-free claim.

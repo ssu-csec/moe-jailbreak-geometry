@@ -1,0 +1,46 @@
+TF-IDF: 58209 unique prompts, vocab 8000
+
+======================================================================================
+EXP A firm-up -- cross-attack base re-ID: activation vs lexical (TF-IDF), attack-centered
+======================================================================================
+  model                  pair                  n  act top1  lex top1  act-lex
+  deepseek-v2-lite       PAP/hill             74     0.338     0.581   -0.243
+  deepseek-v2-lite       PAP/prefill          61     0.279     0.820   -0.541
+  deepseek-v2-lite       PAP/roleplay         90     0.189     0.667   -0.478
+  deepseek-v2-lite       hill/prefill         51     0.196     0.529   -0.333
+  deepseek-v2-lite       hill/roleplay        87     0.115     0.368   -0.253
+  deepseek-v2-lite       prefill/roleplay     87     0.230     0.897   -0.667
+  deepseek-moe-16b-chat  PAP/hill            299     0.488     0.512   -0.023
+  deepseek-moe-16b-chat  PAP/prefill         277     0.430     0.668   -0.238
+  deepseek-moe-16b-chat  PAP/roleplay        321     0.455     0.526   -0.072
+  deepseek-moe-16b-chat  hill/prefill        276     0.250     0.406   -0.156
+  deepseek-moe-16b-chat  hill/roleplay       330     0.324     0.352   -0.027
+  deepseek-moe-16b-chat  prefill/roleplay    296     0.426     0.932   -0.507
+  qwen1.5-moe-a2.7b-chat PAP/hill            300     0.480     0.500   -0.020
+  qwen1.5-moe-a2.7b-chat PAP/prefill         286     0.507     0.675   -0.168
+  qwen1.5-moe-a2.7b-chat PAP/roleplay        323     0.461     0.560   -0.099
+  qwen1.5-moe-a2.7b-chat hill/prefill        281     0.331     0.402   -0.071
+  qwen1.5-moe-a2.7b-chat hill/roleplay       331     0.356     0.363   -0.006
+  qwen1.5-moe-a2.7b-chat prefill/roleplay    304     0.444     0.944   -0.500
+  llama-4-scout          PAP/hill             90     0.322     0.556   -0.233
+  llama-4-scout          PAP/prefill          99     0.212     0.717   -0.505
+  llama-4-scout          PAP/roleplay        118     0.144     0.686   -0.542
+  llama-4-scout          hill/prefill         96     0.094     0.562   -0.469
+  llama-4-scout          hill/roleplay       114     0.088     0.421   -0.333
+  llama-4-scout          prefill/roleplay    125     0.160     0.848   -0.688
+  mixtral-8x7b           PAP/hill             81     0.457     0.667   -0.210
+  mixtral-8x7b           PAP/prefill          69     0.319     0.609   -0.290
+  mixtral-8x7b           PAP/roleplay         95     0.158     0.495   -0.337
+  mixtral-8x7b           hill/prefill         63     0.238     0.460   -0.222
+  mixtral-8x7b           hill/roleplay       106     0.047     0.387   -0.340
+  mixtral-8x7b           prefill/roleplay    123     0.341     0.854   -0.512
+  olmoe-1b-7b            PAP/hill             91     0.363     0.593   -0.231
+  olmoe-1b-7b            PAP/prefill          79     0.443     0.696   -0.253
+  olmoe-1b-7b            PAP/roleplay        106     0.245     0.557   -0.311
+  olmoe-1b-7b            hill/prefill         72     0.250     0.458   -0.208
+  olmoe-1b-7b            hill/roleplay       107     0.140     0.355   -0.215
+  olmoe-1b-7b            prefill/roleplay     87     0.471     0.828   -0.356
+--------------------------------------------------------------------------------------
+  POOLED (36 cells):  median activation top1 0.321   median lexical top1 0.561
+  activation > lexical in 0/36 cells   median gap -0.253
+  read: activation below lexical => the residual is more attack-entangled than the prompt text

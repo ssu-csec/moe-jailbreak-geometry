@@ -1,0 +1,68 @@
+============================================================================================
+LAYER-SELECTION SENSITIVITY for the leave-one-attack-out probe
+rows: pooled median balanced accuracy across 24 held-out cells (95% CI)
+============================================================================================
+  deepseek-moe-16b-chat
+/usr/local/lib/python3.12/dist-packages/sklearn/decomposition/_pca.py:779: RuntimeWarning: invalid value encountered in divide
+  self.explained_variance_ratio_ = self.explained_variance_ / total_var
+/usr/local/lib/python3.12/dist-packages/sklearn/decomposition/_pca.py:779: RuntimeWarning: invalid value encountered in divide
+  self.explained_variance_ratio_ = self.explained_variance_ / total_var
+    train-best   routing PAP=0.56  hill=0.48  prefill=0.52  roleplay=0.31
+    train-best   residual PAP=0.50  hill=0.61  prefill=0.50  roleplay=0.46
+    mid (0.50)   routing PAP=0.47  hill=0.50  prefill=0.53  roleplay=0.44
+    mid (0.50)   residual PAP=0.62  hill=0.63  prefill=0.45  roleplay=0.47
+    late (0.90)  routing PAP=0.48  hill=0.45  prefill=0.50  roleplay=0.39
+    late (0.90)  residual PAP=0.53  hill=0.67  prefill=0.51  roleplay=0.45
+  deepseek-v2-lite
+    train-best   routing PAP=0.90  hill=0.75  prefill=0.50  roleplay=0.52
+    train-best   residual PAP=0.93  hill=0.75  prefill=0.50  roleplay=0.73
+    mid (0.50)   routing PAP=0.62  hill=0.38  prefill=0.50  roleplay=0.64
+    mid (0.50)   residual PAP=0.81  hill=0.72  prefill=0.50  roleplay=0.59
+    late (0.90)  routing PAP=0.76  hill=0.72  prefill=0.49  roleplay=0.69
+    late (0.90)  residual PAP=0.92  hill=0.76  prefill=0.50  roleplay=0.57
+  llama-4-scout
+    train-best   routing PAP=0.69  hill=0.73  prefill=0.58  roleplay=0.47
+    train-best   residual PAP=0.48  hill=0.79  prefill=0.52  roleplay=0.96
+    mid (0.50)   routing PAP=0.47  hill=0.47  prefill=0.58  roleplay=0.50
+    mid (0.50)   residual PAP=0.71  hill=0.50  prefill=0.50  roleplay=0.49
+    late (0.90)  routing PAP=0.68  hill=0.61  prefill=0.41  roleplay=0.51
+    late (0.90)  residual PAP=0.86  hill=0.87  prefill=0.52  roleplay=0.83
+  mixtral-8x7b
+    train-best   routing PAP=0.54  hill=0.49  prefill=0.49  roleplay=0.50
+    train-best   residual PAP=0.76  hill=0.75  prefill=0.53  roleplay=0.48
+    mid (0.50)   routing PAP=0.60  hill=0.48  prefill=0.51  roleplay=0.60
+    mid (0.50)   residual PAP=0.88  hill=0.89  prefill=0.55  roleplay=0.43
+    late (0.90)  routing PAP=0.60  hill=0.59  prefill=0.61  roleplay=0.50
+    late (0.90)  residual PAP=0.77  hill=0.84  prefill=0.55  roleplay=0.69
+  olmoe-1b-7b
+    train-best   routing PAP=0.75  hill=0.78  prefill=0.50  roleplay=0.51
+    train-best   residual PAP=0.88  hill=0.69  prefill=0.51  roleplay=0.54
+    mid (0.50)   routing PAP=0.68  hill=0.59  prefill=0.50  roleplay=0.52
+    mid (0.50)   residual PAP=0.56  hill=0.58  prefill=0.50  roleplay=0.66
+    late (0.90)  routing PAP=0.77  hill=0.78  prefill=0.50  roleplay=0.70
+    late (0.90)  residual PAP=0.85  hill=0.69  prefill=0.51  roleplay=0.51
+  qwen1.5-moe-a2.7b-chat
+    train-best   routing PAP=0.62  hill=0.61  prefill=0.50  roleplay=0.52
+    train-best   residual PAP=0.66  hill=0.69  prefill=0.50  roleplay=0.62
+    mid (0.50)   routing PAP=0.61  hill=0.48  prefill=0.52  roleplay=0.53
+    mid (0.50)   residual PAP=0.66  hill=0.68  prefill=0.52  roleplay=0.60
+    late (0.90)  routing PAP=0.61  hill=0.72  prefill=0.50  roleplay=0.56
+    late (0.90)  residual PAP=0.73  hill=0.66  prefill=0.50  roleplay=0.54
+
+--------------------------------------------------------------------------------------------
+  layer choice            routing pooled         residual pooled
+  train-best      0.522 [0.50,0.61]              0.617 [0.51,0.73]
+  mid (0.50)      0.515 [0.50,0.58]              0.585 [0.50,0.66]
+  late (0.90)     0.595 [0.50,0.68]              0.667 [0.53,0.76]
+
+per held-out attack (routing, median across models):
+  layer choice          PAP       hill    prefill   roleplay
+  train-best           0.66       0.67       0.50       0.50
+  mid (0.50)           0.61       0.48       0.52       0.52
+  late (0.90)          0.65       0.67       0.50       0.54
+
+per held-out attack (residual, median across models):
+  layer choice          PAP       hill    prefill   roleplay
+  train-best           0.71       0.72       0.51       0.58
+  mid (0.50)           0.69       0.65       0.50       0.54
+  late (0.90)          0.81       0.73       0.51       0.55

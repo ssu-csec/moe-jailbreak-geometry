@@ -1,0 +1,193 @@
+routing-dir: ./data/cache_moe_routing
+  [   13s] deepseek-moe-16b-chat    PAP       nR/nC=154/770
+  [   13s] deepseek-moe-16b-chat    hill      nR/nC=183/785
+  [   10s] deepseek-moe-16b-chat    prefill   nR/nC=153/147
+  [   16s] deepseek-moe-16b-chat    roleplay  nR/nC=1197/1205
+  [    9s] deepseek-v2-lite         PAP       nR/nC=103/160
+  [   10s] deepseek-v2-lite         hill      nR/nC=115/153
+  [   10s] deepseek-v2-lite         prefill   nR/nC=132/162
+  [   10s] deepseek-v2-lite         roleplay  nR/nC=196/76
+  [    7s] gpt-oss-20b              PAP       nR/nC=199/55
+  [    5s] gpt-oss-20b              hill      nR/nC=89/58
+  [    0s] gpt-oss-20b              prefill   nR/nC=175/1  (too few -> skipped)
+  [    0s] gpt-oss-20b              roleplay  nR/nC=200/1  (too few -> skipped)
+  [   17s] llama-4-scout            PAP       nR/nC=153/189
+  [   17s] llama-4-scout            hill      nR/nC=164/196
+  [   18s] llama-4-scout            prefill   nR/nC=183/154
+  [   18s] llama-4-scout            roleplay  nR/nC=198/180
+  [    8s] mixtral-8x7b             PAP       nR/nC=51/194
+  [   10s] mixtral-8x7b             hill      nR/nC=155/194
+  [   11s] mixtral-8x7b             prefill   nR/nC=177/181
+  [   10s] mixtral-8x7b             roleplay  nR/nC=189/163
+  [    7s] olmoe-1b-7b              PAP       nR/nC=184/138
+  [    7s] olmoe-1b-7b              hill      nR/nC=187/188
+  [    8s] olmoe-1b-7b              prefill   nR/nC=198/191
+  [    7s] olmoe-1b-7b              roleplay  nR/nC=197/156
+  [   11s] phi-3.5-moe-instruct     PAP       nR/nC=408/562
+  [   12s] phi-3.5-moe-instruct     hill      nR/nC=464/506
+  [    0s] phi-3.5-moe-instruct     prefill   nR/nC=305/8  (too few -> skipped)
+  [   16s] phi-3.5-moe-instruct     roleplay  nR/nC=2479/200
+  [   11s] qwen1.5-moe-a2.7b-chat   PAP       nR/nC=185/736
+  [   12s] qwen1.5-moe-a2.7b-chat   hill      nR/nC=269/701
+  [   10s] qwen1.5-moe-a2.7b-chat   prefill   nR/nC=191/116
+  [   13s] qwen1.5-moe-a2.7b-chat   roleplay  nR/nC=1685/850
+
+====================================================================================================
+PART 1 -- SIGNAL COMPARISON: refused-vs-complied probe (5-fold balanced-acc)
+  routerL = gate logits | selExp = top-k expert choice | routed/shared = pathway out
+  residual = full stream (reference ceiling).  d-model signals probed on top-256 PCs.
+====================================================================================================
+  model                  attack      routerL   selExp  routedO  sharedO  residual  shuf95  verdict
+  deepseek-moe-16b-chat  PAP           0.661    0.605    0.636    0.647     0.677    0.53  partial
+  deepseek-moe-16b-chat  hill          0.707    0.622    0.688    0.707     0.694    0.54  partial
+  deepseek-moe-16b-chat  prefill       0.620    0.588    0.608    0.611     0.597    0.55  NO-GO
+  deepseek-moe-16b-chat  roleplay      0.800    0.713    0.755    0.755     0.787    0.55  GO routing
+  deepseek-v2-lite       PAP           0.970    0.876    0.957    0.976     0.976    0.54  GO routing
+  deepseek-v2-lite       hill          0.960    0.817    0.959    0.951     0.953    0.53  GO routing
+  deepseek-v2-lite       prefill       0.884    0.856    0.868    0.861     0.867    0.54  GO routing
+  deepseek-v2-lite       roleplay      1.000    0.940    0.991    0.993     0.991    0.56  GO routing
+  gpt-oss-20b            PAP           0.958    0.500    0.968        -     0.974    0.58  GO routing
+  gpt-oss-20b            hill          0.969    0.500    0.980        -     0.983    0.57  GO routing
+  gpt-oss-20b            prefill     skipped
+  gpt-oss-20b            roleplay    skipped
+  llama-4-scout          PAP           0.858    0.724    0.938    0.957     0.955    0.55  GO routing
+  llama-4-scout          hill          0.966    0.838    0.972    0.989     0.991    0.53  GO routing
+  llama-4-scout          prefill       0.755    0.636    0.762    0.769     0.764    0.55  GO routing
+  llama-4-scout          roleplay      1.000    0.967    0.997    1.000     1.000    0.55  GO routing
+  mixtral-8x7b           PAP           0.848    0.692    0.934        -     0.929    0.56  GO routing
+  mixtral-8x7b           hill          0.941    0.738    0.986        -     0.988    0.55  GO routing
+  mixtral-8x7b           prefill       0.695    0.637    0.774        -     0.771    0.53  partial
+  mixtral-8x7b           roleplay      0.969    0.897    0.977        -     0.975    0.56  GO routing
+  olmoe-1b-7b            PAP           0.967    0.776    0.978        -     0.984    0.53  GO routing
+  olmoe-1b-7b            hill          0.957    0.809    0.952        -     0.952    0.53  GO routing
+  olmoe-1b-7b            prefill       0.793    0.632    0.744        -     0.744    0.56  GO routing
+  olmoe-1b-7b            roleplay      1.000    0.856    1.000        -     1.000    0.53  GO routing
+  phi-3.5-moe-instruct   PAP           0.810    0.727    0.840        -     0.853    0.55  GO routing
+  phi-3.5-moe-instruct   hill          0.770    0.663    0.753        -     0.757    0.55  GO routing
+  phi-3.5-moe-instruct   prefill     skipped
+  phi-3.5-moe-instruct   roleplay      0.907    0.887    0.923        -     0.922    0.55  GO routing
+  qwen1.5-moe-a2.7b-chat PAP           0.810    0.637    0.805    0.791     0.841    0.58  GO routing
+  qwen1.5-moe-a2.7b-chat hill          0.805    0.698    0.768    0.767     0.792    0.53  GO routing
+  qwen1.5-moe-a2.7b-chat prefill       0.656    0.574    0.664    0.645     0.647    0.55  partial
+  qwen1.5-moe-a2.7b-chat roleplay      0.810    0.745    0.807    0.808     0.805    0.52  GO routing
+  verdict: GO = routing decodes >=0.75, beats shuffle-95, within 0.10 of residual
+
+====================================================================================================
+PART 2 -- LAYER LOCUS of the routing-logit signal (per-layer balanced-acc)
+====================================================================================================
+  deepseek-moe-16b-chat  PAP        early/mid/late 0.62/0.61/0.63   peak: L1=0.66, L21=0.66, L0=0.65
+  deepseek-moe-16b-chat  hill       early/mid/late 0.64/0.63/0.65   peak: L0=0.71, L1=0.69, L26=0.69
+  deepseek-moe-16b-chat  prefill    early/mid/late 0.55/0.59/0.54   peak: L21=0.62, L14=0.61, L13=0.61
+  deepseek-moe-16b-chat  roleplay   early/mid/late 0.71/0.69/0.71   peak: L0=0.80, L26=0.77, L1=0.77
+  deepseek-v2-lite       PAP        early/mid/late 0.79/0.91/0.95   peak: L20=0.97, L21=0.97, L17=0.96
+  deepseek-v2-lite       hill       early/mid/late 0.84/0.89/0.93   peak: L21=0.96, L23=0.95, L17=0.94
+  deepseek-v2-lite       prefill    early/mid/late 0.86/0.87/0.86   peak: L6=0.88, L8=0.88, L20=0.88
+  deepseek-v2-lite       roleplay   early/mid/late 0.97/0.97/0.99   peak: L21=1.00, L20=1.00, L24=0.99
+  gpt-oss-20b            PAP        early/mid/late 0.74/0.84/0.91   peak: L19=0.96, L17=0.95, L16=0.92
+  gpt-oss-20b            hill       early/mid/late 0.89/0.93/0.95   peak: L16=0.97, L18=0.97, L17=0.97
+  llama-4-scout          PAP        early/mid/late 0.79/0.79/0.80   peak: L45=0.86, L31=0.85, L12=0.84
+  llama-4-scout          hill       early/mid/late 0.90/0.90/0.87   peak: L33=0.97, L14=0.95, L10=0.94
+  llama-4-scout          prefill    early/mid/late 0.68/0.68/0.68   peak: L25=0.75, L15=0.74, L30=0.74
+  llama-4-scout          roleplay   early/mid/late 0.99/0.99/0.98   peak: L1=1.00, L4=1.00, L7=1.00
+  mixtral-8x7b           PAP        early/mid/late 0.71/0.75/0.68   peak: L8=0.85, L17=0.83, L18=0.83
+  mixtral-8x7b           hill       early/mid/late 0.89/0.88/0.84   peak: L9=0.94, L5=0.94, L12=0.93
+  mixtral-8x7b           prefill    early/mid/late 0.63/0.66/0.63   peak: L13=0.70, L11=0.70, L4=0.69
+  mixtral-8x7b           roleplay   early/mid/late 0.86/0.92/0.91   peak: L30=0.97, L26=0.97, L17=0.97
+  olmoe-1b-7b            PAP        early/mid/late 0.76/0.87/0.95   peak: L13=0.97, L12=0.97, L10=0.96
+  olmoe-1b-7b            hill       early/mid/late 0.87/0.89/0.93   peak: L11=0.96, L10=0.94, L12=0.94
+  olmoe-1b-7b            prefill    early/mid/late 0.73/0.75/0.75   peak: L7=0.79, L9=0.76, L14=0.76
+  olmoe-1b-7b            roleplay   early/mid/late 1.00/0.99/0.99   peak: L0=1.00, L1=1.00, L2=1.00
+  phi-3.5-moe-instruct   PAP        early/mid/late 0.61/0.73/0.77   peak: L20=0.81, L22=0.81, L18=0.81
+  phi-3.5-moe-instruct   hill       early/mid/late 0.65/0.71/0.72   peak: L19=0.77, L18=0.75, L14=0.74
+  phi-3.5-moe-instruct   roleplay   early/mid/late 0.79/0.85/0.89   peak: L20=0.91, L30=0.90, L16=0.90
+  qwen1.5-moe-a2.7b-chat PAP        early/mid/late 0.57/0.68/0.77   peak: L18=0.81, L20=0.79, L19=0.78
+  qwen1.5-moe-a2.7b-chat hill       early/mid/late 0.72/0.75/0.76   peak: L17=0.81, L14=0.78, L19=0.77
+  qwen1.5-moe-a2.7b-chat prefill    early/mid/late 0.57/0.63/0.61   peak: L17=0.66, L8=0.65, L12=0.64
+  qwen1.5-moe-a2.7b-chat roleplay   early/mid/late 0.75/0.77/0.79   peak: L15=0.81, L16=0.81, L17=0.81
+
+====================================================================================================
+PART 3 -- EXPERT SELECTION: do refused prompts pick different experts?
+  TV = total-variation distance between refused/complied expert-selection frequency (0 = identical, 1 = disjoint)
+====================================================================================================
+  deepseek-moe-16b-chat  PAP        peak TV 0.620 at L5   refused-vs-complied freq delta: e27(+0.21), e13(+0.21), e54(-0.18), e62(-0.15), e29(+0.05)
+  deepseek-moe-16b-chat  hill       peak TV 1.075 at L20   refused-vs-complied freq delta: e48(+0.22), e43(+0.21), e16(+0.14), e31(+0.14), e29(+0.14)
+  deepseek-moe-16b-chat  prefill    peak TV 0.348 at L20   refused-vs-complied freq delta: e39(+0.13), e4(+0.07), e53(-0.06), e9(-0.06), e55(-0.05)
+  deepseek-moe-16b-chat  roleplay   peak TV 2.085 at L12   refused-vs-complied freq delta: e51(-0.36), e7(-0.35), e22(-0.35), e18(+0.34), e59(+0.33)
+  deepseek-v2-lite       PAP        peak TV 1.231 at L20   refused-vs-complied freq delta: e40(-0.42), e17(+0.29), e12(+0.27), e30(+0.21), e44(-0.20)
+  deepseek-v2-lite       hill       peak TV 1.116 at L21   refused-vs-complied freq delta: e62(-0.52), e55(+0.46), e33(+0.29), e46(-0.26), e5(+0.21)
+  deepseek-v2-lite       prefill    peak TV 1.660 at L20   refused-vs-complied freq delta: e14(-0.58), e42(+0.54), e48(+0.52), e27(+0.30), e30(-0.28)
+  deepseek-v2-lite       roleplay   peak TV 1.458 at L23   refused-vs-complied freq delta: e14(+0.64), e58(-0.46), e28(-0.36), e4(+0.32), e26(-0.29)
+  gpt-oss-20b            PAP        peak TV 0.000 at L0   refused-vs-complied freq delta: e0(+0.00), e1(+0.00), e2(+0.00), e3(+0.00), e4(+0.00)
+  gpt-oss-20b            hill       peak TV 0.000 at L0   refused-vs-complied freq delta: e0(+0.00), e1(+0.00), e2(+0.00), e3(+0.00), e4(+0.00)
+  llama-4-scout          PAP        peak TV 0.462 at L39   refused-vs-complied freq delta: e5(-0.40), e4(+0.18), e10(+0.17), e12(+0.09), e11(-0.04)
+  llama-4-scout          hill       peak TV 0.704 at L30   refused-vs-complied freq delta: e2(-0.68), e10(+0.59), e13(+0.10), e5(-0.02), e1(+0.01)
+  llama-4-scout          prefill    peak TV 0.303 at L44   refused-vs-complied freq delta: e15(+0.17), e11(-0.17), e3(+0.09), e10(-0.05), e7(-0.03)
+  llama-4-scout          roleplay   peak TV 0.933 at L1   refused-vs-complied freq delta: e7(+0.93), e12(-0.59), e0(-0.33), e1(-0.01), e3(+0.00)
+  mixtral-8x7b           PAP        peak TV 0.403 at L11   refused-vs-complied freq delta: e2(-0.40), e0(+0.26), e7(+0.12), e4(+0.01), e3(+0.00)
+  mixtral-8x7b           hill       peak TV 0.495 at L22   refused-vs-complied freq delta: e5(-0.47), e7(+0.20), e0(+0.16), e4(+0.08), e3(+0.05)
+  mixtral-8x7b           prefill    peak TV 0.274 at L11   refused-vs-complied freq delta: e2(-0.25), e0(+0.23), e7(+0.05), e4(-0.03), e3(+0.00)
+  mixtral-8x7b           roleplay   peak TV 0.814 at L0   refused-vs-complied freq delta: e1(-0.74), e7(+0.49), e2(+0.33), e0(-0.07), e3(+0.00)
+  olmoe-1b-7b            PAP        peak TV 0.580 at L13   refused-vs-complied freq delta: e9(-0.51), e47(+0.26), e54(+0.20), e11(-0.07), e5(+0.06)
+  olmoe-1b-7b            hill       peak TV 0.661 at L3   refused-vs-complied freq delta: e61(-0.38), e15(+0.37), e62(+0.28), e19(-0.27), e51(+0.01)
+  olmoe-1b-7b            prefill    peak TV 0.264 at L14   refused-vs-complied freq delta: e11(+0.25), e42(-0.24), e45(-0.02), e24(+0.01), e4(+0.00)
+  olmoe-1b-7b            roleplay   peak TV 0.901 at L4   refused-vs-complied freq delta: e41(-0.66), e63(+0.57), e2(+0.33), e18(-0.17), e27(-0.07)
+  phi-3.5-moe-instruct   PAP        peak TV 0.445 at L28   refused-vs-complied freq delta: e14(+0.43), e13(-0.16), e1(-0.12), e15(-0.06), e9(-0.06)
+  phi-3.5-moe-instruct   hill       peak TV 0.400 at L28   refused-vs-complied freq delta: e1(-0.21), e9(+0.17), e13(-0.13), e2(+0.12), e14(+0.08)
+  phi-3.5-moe-instruct   roleplay   peak TV 0.775 at L23   refused-vs-complied freq delta: e14(+0.77), e1(-0.69), e15(-0.09), e0(+0.00), e4(+0.00)
+  qwen1.5-moe-a2.7b-chat PAP        peak TV 0.321 at L19   refused-vs-complied freq delta: e53(+0.19), e26(-0.18), e9(-0.11), e6(+0.08), e17(+0.02)
+  qwen1.5-moe-a2.7b-chat hill       peak TV 0.530 at L21   refused-vs-complied freq delta: e54(-0.21), e51(+0.15), e21(-0.14), e38(+0.11), e12(+0.08)
+  qwen1.5-moe-a2.7b-chat prefill    peak TV 0.200 at L22   refused-vs-complied freq delta: e1(+0.11), e38(-0.07), e55(-0.04), e20(-0.03), e0(+0.02)
+  qwen1.5-moe-a2.7b-chat roleplay   peak TV 0.630 at L21   refused-vs-complied freq delta: e39(+0.30), e51(-0.26), e11(+0.14), e29(-0.14), e14(-0.09)
+
+====================================================================================================
+PART 4 -- CROSS-ATTACK TRANSFER: train probe on attack A, test on attack B
+  routing-logit vs residual-stream, at each model's globally-best routing layer
+====================================================================================================
+  deepseek-moe-16b-chat   (routing layer L0)
+    routing   PAP>hill:0.58  PAP>prefill:0.50  PAP>roleplay:0.44
+    routing   hill>PAP:0.60  hill>prefill:0.53  hill>roleplay:0.44
+    routing   prefill>PAP:0.52  prefill>hill:0.56  prefill>roleplay:0.51
+    routing   roleplay>PAP:0.60  roleplay>hill:0.51  roleplay>prefill:0.50
+    routing off-diagonal median 0.513   residual 0.517   gap -0.005
+  deepseek-v2-lite   (routing layer L21)
+    routing   PAP>hill:0.76  PAP>prefill:0.50  PAP>roleplay:0.68
+    routing   hill>PAP:0.92  hill>prefill:0.50  hill>roleplay:0.55
+    routing   prefill>PAP:0.44  prefill>hill:0.47  prefill>roleplay:0.35
+    routing   roleplay>PAP:0.88  roleplay>hill:0.71  roleplay>prefill:0.50
+    routing off-diagonal median 0.525   residual 0.622   gap -0.098
+  gpt-oss-20b   (routing layer L17)
+    routing   PAP>hill:0.59
+    routing   hill>PAP:0.67
+    routing off-diagonal median 0.630   residual 0.536   gap +0.095
+  llama-4-scout   (routing layer L33)
+    routing   PAP>hill:0.60  PAP>prefill:0.64  PAP>roleplay:0.43
+    routing   hill>PAP:0.56  hill>prefill:0.49  hill>roleplay:0.68
+    routing   prefill>PAP:0.63  prefill>hill:0.47  prefill>roleplay:0.52
+    routing   roleplay>PAP:0.48  roleplay>hill:0.46  roleplay>prefill:0.49
+    routing off-diagonal median 0.503   residual 0.516   gap -0.013
+  mixtral-8x7b   (routing layer L17)
+    routing   PAP>hill:0.63  PAP>prefill:0.49  PAP>roleplay:0.63
+    routing   hill>PAP:0.70  hill>prefill:0.45  hill>roleplay:0.68
+    routing   prefill>PAP:0.50  prefill>hill:0.50  prefill>roleplay:0.56
+    routing   roleplay>PAP:0.65  roleplay>hill:0.62  roleplay>prefill:0.51
+    routing off-diagonal median 0.589   residual 0.522   gap +0.067
+  olmoe-1b-7b   (routing layer L10)
+    routing   PAP>hill:0.87  PAP>prefill:0.50  PAP>roleplay:0.50
+    routing   hill>PAP:0.86  hill>prefill:0.50  hill>roleplay:0.50
+    routing   prefill>PAP:0.31  prefill>hill:0.37  prefill>roleplay:0.68
+    routing   roleplay>PAP:0.74  roleplay>hill:0.63  roleplay>prefill:0.50
+    routing off-diagonal median 0.500   residual 0.553   gap -0.053
+  phi-3.5-moe-instruct   (routing layer L18)
+    routing   PAP>hill:0.60  PAP>roleplay:0.66
+    routing   hill>PAP:0.54  hill>roleplay:0.79
+    routing   roleplay>PAP:0.75  roleplay>hill:0.61
+    routing off-diagonal median 0.635   residual 0.655   gap -0.020
+  qwen1.5-moe-a2.7b-chat   (routing layer L17)
+    routing   PAP>hill:0.71  PAP>prefill:0.50  PAP>roleplay:0.65
+    routing   hill>PAP:0.63  hill>prefill:0.49  hill>roleplay:0.50
+    routing   prefill>PAP:0.43  prefill>hill:0.55  prefill>roleplay:0.69
+    routing   roleplay>PAP:0.50  roleplay>hill:0.50  roleplay>prefill:0.49
+    routing off-diagonal median 0.502   residual 0.503   gap -0.000
+
+====================================================================================================
+SUMMARY: 29 cells probed of 32.  PART 1 verdict column is the go/no-go; PART 4 transfer gap decides the paper.

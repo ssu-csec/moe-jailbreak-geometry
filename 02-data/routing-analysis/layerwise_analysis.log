@@ -1,0 +1,389 @@
+routing-dir: ./data/cache_moe_routing
+/usr/local/lib/python3.12/dist-packages/sklearn/decomposition/_pca.py:779: RuntimeWarning: invalid value encountered in divide
+  self.explained_variance_ratio_ = self.explained_variance_ / total_var
+/usr/local/lib/python3.12/dist-packages/sklearn/decomposition/_pca.py:779: RuntimeWarning: invalid value encountered in divide
+  self.explained_variance_ratio_ = self.explained_variance_ / total_var
+/usr/local/lib/python3.12/dist-packages/sklearn/decomposition/_pca.py:779: RuntimeWarning: invalid value encountered in divide
+  self.explained_variance_ratio_ = self.explained_variance_ / total_var
+/usr/local/lib/python3.12/dist-packages/sklearn/decomposition/_pca.py:779: RuntimeWarning: invalid value encountered in divide
+  self.explained_variance_ratio_ = self.explained_variance_ / total_var
+/usr/local/lib/python3.12/dist-packages/sklearn/decomposition/_pca.py:779: RuntimeWarning: invalid value encountered in divide
+  self.explained_variance_ratio_ = self.explained_variance_ / total_var
+/usr/local/lib/python3.12/dist-packages/sklearn/decomposition/_pca.py:779: RuntimeWarning: invalid value encountered in divide
+  self.explained_variance_ratio_ = self.explained_variance_ / total_var
+/usr/local/lib/python3.12/dist-packages/sklearn/decomposition/_pca.py:779: RuntimeWarning: invalid value encountered in divide
+  self.explained_variance_ratio_ = self.explained_variance_ / total_var
+/usr/local/lib/python3.12/dist-packages/sklearn/decomposition/_pca.py:779: RuntimeWarning: invalid value encountered in divide
+  self.explained_variance_ratio_ = self.explained_variance_ / total_var
+/usr/local/lib/python3.12/dist-packages/sklearn/decomposition/_pca.py:779: RuntimeWarning: invalid value encountered in divide
+  self.explained_variance_ratio_ = self.explained_variance_ / total_var
+/usr/local/lib/python3.12/dist-packages/sklearn/decomposition/_pca.py:779: RuntimeWarning: invalid value encountered in divide
+  self.explained_variance_ratio_ = self.explained_variance_ / total_var
+/usr/local/lib/python3.12/dist-packages/sklearn/decomposition/_pca.py:646: RuntimeWarning: invalid value encountered in divide
+  explained_variance_ratio_ = explained_variance_ / total_var
+/usr/local/lib/python3.12/dist-packages/sklearn/decomposition/_pca.py:646: RuntimeWarning: invalid value encountered in divide
+  explained_variance_ratio_ = explained_variance_ / total_var
+/usr/local/lib/python3.12/dist-packages/sklearn/decomposition/_pca.py:646: RuntimeWarning: invalid value encountered in divide
+  explained_variance_ratio_ = explained_variance_ / total_var
+/usr/local/lib/python3.12/dist-packages/sklearn/decomposition/_pca.py:646: RuntimeWarning: invalid value encountered in divide
+  explained_variance_ratio_ = explained_variance_ / total_var
+/usr/local/lib/python3.12/dist-packages/sklearn/decomposition/_pca.py:646: RuntimeWarning: invalid value encountered in divide
+  explained_variance_ratio_ = explained_variance_ / total_var
+/usr/local/lib/python3.12/dist-packages/sklearn/decomposition/_pca.py:779: RuntimeWarning: invalid value encountered in divide
+  self.explained_variance_ratio_ = self.explained_variance_ / total_var
+/usr/local/lib/python3.12/dist-packages/sklearn/decomposition/_pca.py:779: RuntimeWarning: invalid value encountered in divide
+  self.explained_variance_ratio_ = self.explained_variance_ / total_var
+/usr/local/lib/python3.12/dist-packages/sklearn/decomposition/_pca.py:779: RuntimeWarning: invalid value encountered in divide
+  self.explained_variance_ratio_ = self.explained_variance_ / total_var
+/usr/local/lib/python3.12/dist-packages/sklearn/decomposition/_pca.py:779: RuntimeWarning: invalid value encountered in divide
+  self.explained_variance_ratio_ = self.explained_variance_ / total_var
+/usr/local/lib/python3.12/dist-packages/sklearn/decomposition/_pca.py:779: RuntimeWarning: invalid value encountered in divide
+  self.explained_variance_ratio_ = self.explained_variance_ / total_var
+/usr/local/lib/python3.12/dist-packages/sklearn/decomposition/_pca.py:779: RuntimeWarning: invalid value encountered in divide
+  self.explained_variance_ratio_ = self.explained_variance_ / total_var
+/usr/local/lib/python3.12/dist-packages/sklearn/decomposition/_pca.py:779: RuntimeWarning: invalid value encountered in divide
+  self.explained_variance_ratio_ = self.explained_variance_ / total_var
+/usr/local/lib/python3.12/dist-packages/sklearn/decomposition/_pca.py:779: RuntimeWarning: invalid value encountered in divide
+  self.explained_variance_ratio_ = self.explained_variance_ / total_var
+/usr/local/lib/python3.12/dist-packages/sklearn/decomposition/_pca.py:779: RuntimeWarning: invalid value encountered in divide
+  self.explained_variance_ratio_ = self.explained_variance_ / total_var
+/usr/local/lib/python3.12/dist-packages/sklearn/decomposition/_pca.py:779: RuntimeWarning: invalid value encountered in divide
+  self.explained_variance_ratio_ = self.explained_variance_ / total_var
+/usr/local/lib/python3.12/dist-packages/sklearn/decomposition/_pca.py:779: RuntimeWarning: invalid value encountered in divide
+  self.explained_variance_ratio_ = self.explained_variance_ / total_var
+  done deepseek-moe-16b-chat  (1724s)
+/usr/local/lib/python3.12/dist-packages/sklearn/decomposition/_pca.py:646: RuntimeWarning: invalid value encountered in divide
+  explained_variance_ratio_ = explained_variance_ / total_var
+/usr/local/lib/python3.12/dist-packages/sklearn/decomposition/_pca.py:646: RuntimeWarning: invalid value encountered in divide
+  explained_variance_ratio_ = explained_variance_ / total_var
+/usr/local/lib/python3.12/dist-packages/sklearn/decomposition/_pca.py:646: RuntimeWarning: invalid value encountered in divide
+  explained_variance_ratio_ = explained_variance_ / total_var
+/usr/local/lib/python3.12/dist-packages/sklearn/decomposition/_pca.py:646: RuntimeWarning: invalid value encountered in divide
+  explained_variance_ratio_ = explained_variance_ / total_var
+/usr/local/lib/python3.12/dist-packages/sklearn/decomposition/_pca.py:646: RuntimeWarning: invalid value encountered in divide
+  explained_variance_ratio_ = explained_variance_ / total_var
+/usr/local/lib/python3.12/dist-packages/sklearn/decomposition/_pca.py:646: RuntimeWarning: invalid value encountered in divide
+  explained_variance_ratio_ = explained_variance_ / total_var
+/usr/local/lib/python3.12/dist-packages/sklearn/decomposition/_pca.py:646: RuntimeWarning: invalid value encountered in divide
+  explained_variance_ratio_ = explained_variance_ / total_var
+/usr/local/lib/python3.12/dist-packages/sklearn/decomposition/_pca.py:646: RuntimeWarning: invalid value encountered in divide
+  explained_variance_ratio_ = explained_variance_ / total_var
+/usr/local/lib/python3.12/dist-packages/sklearn/decomposition/_pca.py:646: RuntimeWarning: invalid value encountered in divide
+  explained_variance_ratio_ = explained_variance_ / total_var
+/usr/local/lib/python3.12/dist-packages/sklearn/decomposition/_pca.py:646: RuntimeWarning: invalid value encountered in divide
+  explained_variance_ratio_ = explained_variance_ / total_var
+/usr/local/lib/python3.12/dist-packages/sklearn/decomposition/_pca.py:646: RuntimeWarning: invalid value encountered in divide
+  explained_variance_ratio_ = explained_variance_ / total_var
+/usr/local/lib/python3.12/dist-packages/sklearn/decomposition/_pca.py:646: RuntimeWarning: invalid value encountered in divide
+  explained_variance_ratio_ = explained_variance_ / total_var
+/usr/local/lib/python3.12/dist-packages/sklearn/decomposition/_pca.py:646: RuntimeWarning: invalid value encountered in divide
+  explained_variance_ratio_ = explained_variance_ / total_var
+/usr/local/lib/python3.12/dist-packages/sklearn/decomposition/_pca.py:646: RuntimeWarning: invalid value encountered in divide
+  explained_variance_ratio_ = explained_variance_ / total_var
+/usr/local/lib/python3.12/dist-packages/sklearn/decomposition/_pca.py:646: RuntimeWarning: invalid value encountered in divide
+  explained_variance_ratio_ = explained_variance_ / total_var
+/usr/local/lib/python3.12/dist-packages/sklearn/decomposition/_pca.py:646: RuntimeWarning: invalid value encountered in divide
+  explained_variance_ratio_ = explained_variance_ / total_var
+/usr/local/lib/python3.12/dist-packages/sklearn/decomposition/_pca.py:646: RuntimeWarning: invalid value encountered in divide
+  explained_variance_ratio_ = explained_variance_ / total_var
+/usr/local/lib/python3.12/dist-packages/sklearn/decomposition/_pca.py:646: RuntimeWarning: invalid value encountered in divide
+  explained_variance_ratio_ = explained_variance_ / total_var
+/usr/local/lib/python3.12/dist-packages/sklearn/decomposition/_pca.py:646: RuntimeWarning: invalid value encountered in divide
+  explained_variance_ratio_ = explained_variance_ / total_var
+/usr/local/lib/python3.12/dist-packages/sklearn/decomposition/_pca.py:646: RuntimeWarning: invalid value encountered in divide
+  explained_variance_ratio_ = explained_variance_ / total_var
+/usr/local/lib/python3.12/dist-packages/sklearn/decomposition/_pca.py:779: RuntimeWarning: invalid value encountered in divide
+  self.explained_variance_ratio_ = self.explained_variance_ / total_var
+/usr/local/lib/python3.12/dist-packages/sklearn/decomposition/_pca.py:779: RuntimeWarning: invalid value encountered in divide
+  self.explained_variance_ratio_ = self.explained_variance_ / total_var
+/usr/local/lib/python3.12/dist-packages/sklearn/decomposition/_pca.py:779: RuntimeWarning: invalid value encountered in divide
+  self.explained_variance_ratio_ = self.explained_variance_ / total_var
+/usr/local/lib/python3.12/dist-packages/sklearn/decomposition/_pca.py:779: RuntimeWarning: invalid value encountered in divide
+  self.explained_variance_ratio_ = self.explained_variance_ / total_var
+/usr/local/lib/python3.12/dist-packages/sklearn/decomposition/_pca.py:779: RuntimeWarning: invalid value encountered in divide
+  self.explained_variance_ratio_ = self.explained_variance_ / total_var
+/usr/local/lib/python3.12/dist-packages/sklearn/decomposition/_pca.py:779: RuntimeWarning: invalid value encountered in divide
+  self.explained_variance_ratio_ = self.explained_variance_ / total_var
+  done deepseek-v2-lite  (125s)
+  skip gpt-oss-20b  (< 25/class)
+/usr/local/lib/python3.12/dist-packages/sklearn/decomposition/_pca.py:646: RuntimeWarning: invalid value encountered in divide
+  explained_variance_ratio_ = explained_variance_ / total_var
+/usr/local/lib/python3.12/dist-packages/sklearn/decomposition/_pca.py:646: RuntimeWarning: invalid value encountered in divide
+  explained_variance_ratio_ = explained_variance_ / total_var
+/usr/local/lib/python3.12/dist-packages/sklearn/decomposition/_pca.py:646: RuntimeWarning: invalid value encountered in divide
+  explained_variance_ratio_ = explained_variance_ / total_var
+/usr/local/lib/python3.12/dist-packages/sklearn/decomposition/_pca.py:646: RuntimeWarning: invalid value encountered in divide
+  explained_variance_ratio_ = explained_variance_ / total_var
+/usr/local/lib/python3.12/dist-packages/sklearn/decomposition/_pca.py:646: RuntimeWarning: invalid value encountered in divide
+  explained_variance_ratio_ = explained_variance_ / total_var
+/usr/local/lib/python3.12/dist-packages/sklearn/decomposition/_pca.py:646: RuntimeWarning: invalid value encountered in divide
+  explained_variance_ratio_ = explained_variance_ / total_var
+/usr/local/lib/python3.12/dist-packages/sklearn/decomposition/_pca.py:646: RuntimeWarning: invalid value encountered in divide
+  explained_variance_ratio_ = explained_variance_ / total_var
+/usr/local/lib/python3.12/dist-packages/sklearn/decomposition/_pca.py:646: RuntimeWarning: invalid value encountered in divide
+  explained_variance_ratio_ = explained_variance_ / total_var
+/usr/local/lib/python3.12/dist-packages/sklearn/decomposition/_pca.py:646: RuntimeWarning: invalid value encountered in divide
+  explained_variance_ratio_ = explained_variance_ / total_var
+/usr/local/lib/python3.12/dist-packages/sklearn/decomposition/_pca.py:646: RuntimeWarning: invalid value encountered in divide
+  explained_variance_ratio_ = explained_variance_ / total_var
+/usr/local/lib/python3.12/dist-packages/sklearn/decomposition/_pca.py:646: RuntimeWarning: invalid value encountered in divide
+  explained_variance_ratio_ = explained_variance_ / total_var
+/usr/local/lib/python3.12/dist-packages/sklearn/decomposition/_pca.py:646: RuntimeWarning: invalid value encountered in divide
+  explained_variance_ratio_ = explained_variance_ / total_var
+/usr/local/lib/python3.12/dist-packages/sklearn/decomposition/_pca.py:646: RuntimeWarning: invalid value encountered in divide
+  explained_variance_ratio_ = explained_variance_ / total_var
+/usr/local/lib/python3.12/dist-packages/sklearn/decomposition/_pca.py:646: RuntimeWarning: invalid value encountered in divide
+  explained_variance_ratio_ = explained_variance_ / total_var
+/usr/local/lib/python3.12/dist-packages/sklearn/decomposition/_pca.py:646: RuntimeWarning: invalid value encountered in divide
+  explained_variance_ratio_ = explained_variance_ / total_var
+/usr/local/lib/python3.12/dist-packages/sklearn/decomposition/_pca.py:646: RuntimeWarning: invalid value encountered in divide
+  explained_variance_ratio_ = explained_variance_ / total_var
+/usr/local/lib/python3.12/dist-packages/sklearn/decomposition/_pca.py:646: RuntimeWarning: invalid value encountered in divide
+  explained_variance_ratio_ = explained_variance_ / total_var
+/usr/local/lib/python3.12/dist-packages/sklearn/decomposition/_pca.py:646: RuntimeWarning: invalid value encountered in divide
+  explained_variance_ratio_ = explained_variance_ / total_var
+/usr/local/lib/python3.12/dist-packages/sklearn/decomposition/_pca.py:646: RuntimeWarning: invalid value encountered in divide
+  explained_variance_ratio_ = explained_variance_ / total_var
+/usr/local/lib/python3.12/dist-packages/sklearn/decomposition/_pca.py:646: RuntimeWarning: invalid value encountered in divide
+  explained_variance_ratio_ = explained_variance_ / total_var
+/usr/local/lib/python3.12/dist-packages/sklearn/decomposition/_pca.py:779: RuntimeWarning: invalid value encountered in divide
+  self.explained_variance_ratio_ = self.explained_variance_ / total_var
+/usr/local/lib/python3.12/dist-packages/sklearn/decomposition/_pca.py:779: RuntimeWarning: invalid value encountered in divide
+  self.explained_variance_ratio_ = self.explained_variance_ / total_var
+/usr/local/lib/python3.12/dist-packages/sklearn/decomposition/_pca.py:779: RuntimeWarning: invalid value encountered in divide
+  self.explained_variance_ratio_ = self.explained_variance_ / total_var
+/usr/local/lib/python3.12/dist-packages/sklearn/decomposition/_pca.py:779: RuntimeWarning: invalid value encountered in divide
+  self.explained_variance_ratio_ = self.explained_variance_ / total_var
+/usr/local/lib/python3.12/dist-packages/sklearn/decomposition/_pca.py:779: RuntimeWarning: invalid value encountered in divide
+  self.explained_variance_ratio_ = self.explained_variance_ / total_var
+/usr/local/lib/python3.12/dist-packages/sklearn/decomposition/_pca.py:779: RuntimeWarning: invalid value encountered in divide
+  self.explained_variance_ratio_ = self.explained_variance_ / total_var
+  done llama-4-scout  (171s)
+/usr/local/lib/python3.12/dist-packages/sklearn/decomposition/_pca.py:646: RuntimeWarning: invalid value encountered in divide
+  explained_variance_ratio_ = explained_variance_ / total_var
+/usr/local/lib/python3.12/dist-packages/sklearn/decomposition/_pca.py:646: RuntimeWarning: invalid value encountered in divide
+  explained_variance_ratio_ = explained_variance_ / total_var
+/usr/local/lib/python3.12/dist-packages/sklearn/decomposition/_pca.py:646: RuntimeWarning: invalid value encountered in divide
+  explained_variance_ratio_ = explained_variance_ / total_var
+/usr/local/lib/python3.12/dist-packages/sklearn/decomposition/_pca.py:646: RuntimeWarning: invalid value encountered in divide
+  explained_variance_ratio_ = explained_variance_ / total_var
+/usr/local/lib/python3.12/dist-packages/sklearn/decomposition/_pca.py:646: RuntimeWarning: invalid value encountered in divide
+  explained_variance_ratio_ = explained_variance_ / total_var
+/usr/local/lib/python3.12/dist-packages/sklearn/decomposition/_pca.py:646: RuntimeWarning: invalid value encountered in divide
+  explained_variance_ratio_ = explained_variance_ / total_var
+/usr/local/lib/python3.12/dist-packages/sklearn/decomposition/_pca.py:646: RuntimeWarning: invalid value encountered in divide
+  explained_variance_ratio_ = explained_variance_ / total_var
+/usr/local/lib/python3.12/dist-packages/sklearn/decomposition/_pca.py:646: RuntimeWarning: invalid value encountered in divide
+  explained_variance_ratio_ = explained_variance_ / total_var
+/usr/local/lib/python3.12/dist-packages/sklearn/decomposition/_pca.py:646: RuntimeWarning: invalid value encountered in divide
+  explained_variance_ratio_ = explained_variance_ / total_var
+/usr/local/lib/python3.12/dist-packages/sklearn/decomposition/_pca.py:646: RuntimeWarning: invalid value encountered in divide
+  explained_variance_ratio_ = explained_variance_ / total_var
+/usr/local/lib/python3.12/dist-packages/sklearn/decomposition/_pca.py:646: RuntimeWarning: invalid value encountered in divide
+  explained_variance_ratio_ = explained_variance_ / total_var
+/usr/local/lib/python3.12/dist-packages/sklearn/decomposition/_pca.py:646: RuntimeWarning: invalid value encountered in divide
+  explained_variance_ratio_ = explained_variance_ / total_var
+/usr/local/lib/python3.12/dist-packages/sklearn/decomposition/_pca.py:646: RuntimeWarning: invalid value encountered in divide
+  explained_variance_ratio_ = explained_variance_ / total_var
+/usr/local/lib/python3.12/dist-packages/sklearn/decomposition/_pca.py:646: RuntimeWarning: invalid value encountered in divide
+  explained_variance_ratio_ = explained_variance_ / total_var
+/usr/local/lib/python3.12/dist-packages/sklearn/decomposition/_pca.py:646: RuntimeWarning: invalid value encountered in divide
+  explained_variance_ratio_ = explained_variance_ / total_var
+/usr/local/lib/python3.12/dist-packages/sklearn/decomposition/_pca.py:646: RuntimeWarning: invalid value encountered in divide
+  explained_variance_ratio_ = explained_variance_ / total_var
+/usr/local/lib/python3.12/dist-packages/sklearn/decomposition/_pca.py:646: RuntimeWarning: invalid value encountered in divide
+  explained_variance_ratio_ = explained_variance_ / total_var
+/usr/local/lib/python3.12/dist-packages/sklearn/decomposition/_pca.py:646: RuntimeWarning: invalid value encountered in divide
+  explained_variance_ratio_ = explained_variance_ / total_var
+/usr/local/lib/python3.12/dist-packages/sklearn/decomposition/_pca.py:646: RuntimeWarning: invalid value encountered in divide
+  explained_variance_ratio_ = explained_variance_ / total_var
+/usr/local/lib/python3.12/dist-packages/sklearn/decomposition/_pca.py:646: RuntimeWarning: invalid value encountered in divide
+  explained_variance_ratio_ = explained_variance_ / total_var
+/usr/local/lib/python3.12/dist-packages/sklearn/decomposition/_pca.py:779: RuntimeWarning: invalid value encountered in divide
+  self.explained_variance_ratio_ = self.explained_variance_ / total_var
+/usr/local/lib/python3.12/dist-packages/sklearn/decomposition/_pca.py:779: RuntimeWarning: invalid value encountered in divide
+  self.explained_variance_ratio_ = self.explained_variance_ / total_var
+/usr/local/lib/python3.12/dist-packages/sklearn/decomposition/_pca.py:779: RuntimeWarning: invalid value encountered in divide
+  self.explained_variance_ratio_ = self.explained_variance_ / total_var
+/usr/local/lib/python3.12/dist-packages/sklearn/decomposition/_pca.py:779: RuntimeWarning: invalid value encountered in divide
+  self.explained_variance_ratio_ = self.explained_variance_ / total_var
+/usr/local/lib/python3.12/dist-packages/sklearn/decomposition/_pca.py:779: RuntimeWarning: invalid value encountered in divide
+  self.explained_variance_ratio_ = self.explained_variance_ / total_var
+/usr/local/lib/python3.12/dist-packages/sklearn/decomposition/_pca.py:779: RuntimeWarning: invalid value encountered in divide
+  self.explained_variance_ratio_ = self.explained_variance_ / total_var
+  done mixtral-8x7b  (157s)
+/usr/local/lib/python3.12/dist-packages/sklearn/decomposition/_pca.py:646: RuntimeWarning: invalid value encountered in divide
+  explained_variance_ratio_ = explained_variance_ / total_var
+/usr/local/lib/python3.12/dist-packages/sklearn/decomposition/_pca.py:646: RuntimeWarning: invalid value encountered in divide
+  explained_variance_ratio_ = explained_variance_ / total_var
+/usr/local/lib/python3.12/dist-packages/sklearn/decomposition/_pca.py:646: RuntimeWarning: invalid value encountered in divide
+  explained_variance_ratio_ = explained_variance_ / total_var
+/usr/local/lib/python3.12/dist-packages/sklearn/decomposition/_pca.py:646: RuntimeWarning: invalid value encountered in divide
+  explained_variance_ratio_ = explained_variance_ / total_var
+/usr/local/lib/python3.12/dist-packages/sklearn/decomposition/_pca.py:646: RuntimeWarning: invalid value encountered in divide
+  explained_variance_ratio_ = explained_variance_ / total_var
+/usr/local/lib/python3.12/dist-packages/sklearn/decomposition/_pca.py:646: RuntimeWarning: invalid value encountered in divide
+  explained_variance_ratio_ = explained_variance_ / total_var
+/usr/local/lib/python3.12/dist-packages/sklearn/decomposition/_pca.py:646: RuntimeWarning: invalid value encountered in divide
+  explained_variance_ratio_ = explained_variance_ / total_var
+/usr/local/lib/python3.12/dist-packages/sklearn/decomposition/_pca.py:646: RuntimeWarning: invalid value encountered in divide
+  explained_variance_ratio_ = explained_variance_ / total_var
+/usr/local/lib/python3.12/dist-packages/sklearn/decomposition/_pca.py:646: RuntimeWarning: invalid value encountered in divide
+  explained_variance_ratio_ = explained_variance_ / total_var
+/usr/local/lib/python3.12/dist-packages/sklearn/decomposition/_pca.py:646: RuntimeWarning: invalid value encountered in divide
+  explained_variance_ratio_ = explained_variance_ / total_var
+/usr/local/lib/python3.12/dist-packages/sklearn/decomposition/_pca.py:646: RuntimeWarning: invalid value encountered in divide
+  explained_variance_ratio_ = explained_variance_ / total_var
+/usr/local/lib/python3.12/dist-packages/sklearn/decomposition/_pca.py:646: RuntimeWarning: invalid value encountered in divide
+  explained_variance_ratio_ = explained_variance_ / total_var
+/usr/local/lib/python3.12/dist-packages/sklearn/decomposition/_pca.py:646: RuntimeWarning: invalid value encountered in divide
+  explained_variance_ratio_ = explained_variance_ / total_var
+/usr/local/lib/python3.12/dist-packages/sklearn/decomposition/_pca.py:646: RuntimeWarning: invalid value encountered in divide
+  explained_variance_ratio_ = explained_variance_ / total_var
+/usr/local/lib/python3.12/dist-packages/sklearn/decomposition/_pca.py:646: RuntimeWarning: invalid value encountered in divide
+  explained_variance_ratio_ = explained_variance_ / total_var
+/usr/local/lib/python3.12/dist-packages/sklearn/decomposition/_pca.py:646: RuntimeWarning: invalid value encountered in divide
+  explained_variance_ratio_ = explained_variance_ / total_var
+/usr/local/lib/python3.12/dist-packages/sklearn/decomposition/_pca.py:646: RuntimeWarning: invalid value encountered in divide
+  explained_variance_ratio_ = explained_variance_ / total_var
+/usr/local/lib/python3.12/dist-packages/sklearn/decomposition/_pca.py:646: RuntimeWarning: invalid value encountered in divide
+  explained_variance_ratio_ = explained_variance_ / total_var
+/usr/local/lib/python3.12/dist-packages/sklearn/decomposition/_pca.py:646: RuntimeWarning: invalid value encountered in divide
+  explained_variance_ratio_ = explained_variance_ / total_var
+/usr/local/lib/python3.12/dist-packages/sklearn/decomposition/_pca.py:646: RuntimeWarning: invalid value encountered in divide
+  explained_variance_ratio_ = explained_variance_ / total_var
+/usr/local/lib/python3.12/dist-packages/sklearn/decomposition/_pca.py:779: RuntimeWarning: invalid value encountered in divide
+  self.explained_variance_ratio_ = self.explained_variance_ / total_var
+/usr/local/lib/python3.12/dist-packages/sklearn/decomposition/_pca.py:779: RuntimeWarning: invalid value encountered in divide
+  self.explained_variance_ratio_ = self.explained_variance_ / total_var
+/usr/local/lib/python3.12/dist-packages/sklearn/decomposition/_pca.py:779: RuntimeWarning: invalid value encountered in divide
+  self.explained_variance_ratio_ = self.explained_variance_ / total_var
+/usr/local/lib/python3.12/dist-packages/sklearn/decomposition/_pca.py:779: RuntimeWarning: invalid value encountered in divide
+  self.explained_variance_ratio_ = self.explained_variance_ / total_var
+/usr/local/lib/python3.12/dist-packages/sklearn/decomposition/_pca.py:779: RuntimeWarning: invalid value encountered in divide
+  self.explained_variance_ratio_ = self.explained_variance_ / total_var
+/usr/local/lib/python3.12/dist-packages/sklearn/decomposition/_pca.py:779: RuntimeWarning: invalid value encountered in divide
+  self.explained_variance_ratio_ = self.explained_variance_ / total_var
+  done olmoe-1b-7b  (137s)
+  skip phi-3.5-moe-instruct  (< 25/class)
+/usr/local/lib/python3.12/dist-packages/sklearn/decomposition/_pca.py:779: RuntimeWarning: invalid value encountered in divide
+  self.explained_variance_ratio_ = self.explained_variance_ / total_var
+/usr/local/lib/python3.12/dist-packages/sklearn/decomposition/_pca.py:779: RuntimeWarning: invalid value encountered in divide
+  self.explained_variance_ratio_ = self.explained_variance_ / total_var
+/usr/local/lib/python3.12/dist-packages/sklearn/decomposition/_pca.py:779: RuntimeWarning: invalid value encountered in divide
+  self.explained_variance_ratio_ = self.explained_variance_ / total_var
+/usr/local/lib/python3.12/dist-packages/sklearn/decomposition/_pca.py:779: RuntimeWarning: invalid value encountered in divide
+  self.explained_variance_ratio_ = self.explained_variance_ / total_var
+/usr/local/lib/python3.12/dist-packages/sklearn/decomposition/_pca.py:779: RuntimeWarning: invalid value encountered in divide
+  self.explained_variance_ratio_ = self.explained_variance_ / total_var
+/usr/local/lib/python3.12/dist-packages/sklearn/decomposition/_pca.py:779: RuntimeWarning: invalid value encountered in divide
+  self.explained_variance_ratio_ = self.explained_variance_ / total_var
+/usr/local/lib/python3.12/dist-packages/sklearn/decomposition/_pca.py:779: RuntimeWarning: invalid value encountered in divide
+  self.explained_variance_ratio_ = self.explained_variance_ / total_var
+/usr/local/lib/python3.12/dist-packages/sklearn/decomposition/_pca.py:779: RuntimeWarning: invalid value encountered in divide
+  self.explained_variance_ratio_ = self.explained_variance_ / total_var
+/usr/local/lib/python3.12/dist-packages/sklearn/decomposition/_pca.py:779: RuntimeWarning: invalid value encountered in divide
+  self.explained_variance_ratio_ = self.explained_variance_ / total_var
+/usr/local/lib/python3.12/dist-packages/sklearn/decomposition/_pca.py:779: RuntimeWarning: invalid value encountered in divide
+  self.explained_variance_ratio_ = self.explained_variance_ / total_var
+/usr/local/lib/python3.12/dist-packages/sklearn/decomposition/_pca.py:646: RuntimeWarning: invalid value encountered in divide
+  explained_variance_ratio_ = explained_variance_ / total_var
+/usr/local/lib/python3.12/dist-packages/sklearn/decomposition/_pca.py:646: RuntimeWarning: invalid value encountered in divide
+  explained_variance_ratio_ = explained_variance_ / total_var
+/usr/local/lib/python3.12/dist-packages/sklearn/decomposition/_pca.py:646: RuntimeWarning: invalid value encountered in divide
+  explained_variance_ratio_ = explained_variance_ / total_var
+/usr/local/lib/python3.12/dist-packages/sklearn/decomposition/_pca.py:646: RuntimeWarning: invalid value encountered in divide
+  explained_variance_ratio_ = explained_variance_ / total_var
+/usr/local/lib/python3.12/dist-packages/sklearn/decomposition/_pca.py:646: RuntimeWarning: invalid value encountered in divide
+  explained_variance_ratio_ = explained_variance_ / total_var
+/usr/local/lib/python3.12/dist-packages/sklearn/decomposition/_pca.py:779: RuntimeWarning: invalid value encountered in divide
+  self.explained_variance_ratio_ = self.explained_variance_ / total_var
+/usr/local/lib/python3.12/dist-packages/sklearn/decomposition/_pca.py:779: RuntimeWarning: invalid value encountered in divide
+  self.explained_variance_ratio_ = self.explained_variance_ / total_var
+/usr/local/lib/python3.12/dist-packages/sklearn/decomposition/_pca.py:779: RuntimeWarning: invalid value encountered in divide
+  self.explained_variance_ratio_ = self.explained_variance_ / total_var
+/usr/local/lib/python3.12/dist-packages/sklearn/decomposition/_pca.py:779: RuntimeWarning: invalid value encountered in divide
+  self.explained_variance_ratio_ = self.explained_variance_ / total_var
+/usr/local/lib/python3.12/dist-packages/sklearn/decomposition/_pca.py:779: RuntimeWarning: invalid value encountered in divide
+  self.explained_variance_ratio_ = self.explained_variance_ / total_var
+/usr/local/lib/python3.12/dist-packages/sklearn/decomposition/_pca.py:779: RuntimeWarning: invalid value encountered in divide
+  self.explained_variance_ratio_ = self.explained_variance_ / total_var
+/usr/local/lib/python3.12/dist-packages/sklearn/decomposition/_pca.py:779: RuntimeWarning: invalid value encountered in divide
+  self.explained_variance_ratio_ = self.explained_variance_ / total_var
+/usr/local/lib/python3.12/dist-packages/sklearn/decomposition/_pca.py:779: RuntimeWarning: invalid value encountered in divide
+  self.explained_variance_ratio_ = self.explained_variance_ / total_var
+/usr/local/lib/python3.12/dist-packages/sklearn/decomposition/_pca.py:779: RuntimeWarning: invalid value encountered in divide
+  self.explained_variance_ratio_ = self.explained_variance_ / total_var
+/usr/local/lib/python3.12/dist-packages/sklearn/decomposition/_pca.py:779: RuntimeWarning: invalid value encountered in divide
+  self.explained_variance_ratio_ = self.explained_variance_ / total_var
+/usr/local/lib/python3.12/dist-packages/sklearn/decomposition/_pca.py:779: RuntimeWarning: invalid value encountered in divide
+  self.explained_variance_ratio_ = self.explained_variance_ / total_var
+  done qwen1.5-moe-a2.7b-chat  (780s)
+saved /tmp/layerwise_data.json
+
+========================================================================================
+[ROUTING]  experiment 2: decode and transfer vs depth (early/mid/late thirds)
+========================================================================================
+  model                  third    decode   LOO-all  LOO-cross
+  deepseek-moe-16b-chat  early      0.64      0.50       0.51
+  deepseek-moe-16b-chat  mid        0.63      0.51       0.52
+  deepseek-moe-16b-chat  late       0.64      0.49       0.49
+  deepseek-v2-lite       early      0.86      0.53       0.54
+  deepseek-v2-lite       mid        0.92      0.58       0.51
+  deepseek-v2-lite       late       0.94      0.69       0.60
+  llama-4-scout          early      0.84      0.51       0.50
+  llama-4-scout          mid        0.84      0.57       0.54
+  llama-4-scout          late       0.83      0.55       0.51
+  mixtral-8x7b           early      0.77      0.51       0.53
+  mixtral-8x7b           mid        0.80      0.52       0.52
+  mixtral-8x7b           late       0.77      0.52       0.52
+  olmoe-1b-7b            early      0.85      0.48       0.42
+  olmoe-1b-7b            mid        0.87      0.53       0.51
+  olmoe-1b-7b            late       0.91      0.66       0.57
+  qwen1.5-moe-a2.7b-chat early      0.68      0.50       0.49
+  qwen1.5-moe-a2.7b-chat mid        0.72      0.56       0.56
+  qwen1.5-moe-a2.7b-chat late       0.74      0.58       0.57
+  ------------------------------------------------------------
+  POOLED median          early      0.80      0.51       0.51
+  POOLED median          mid        0.82      0.55       0.52
+  POOLED median          late       0.80      0.57       0.55
+
+========================================================================================
+[RESIDUAL]  experiment 2: decode and transfer vs depth (early/mid/late thirds)
+========================================================================================
+  model                  third    decode   LOO-all  LOO-cross  pers-cos  cross-cos
+  deepseek-moe-16b-chat  early      0.63      0.51       0.49     +0.59      -0.06
+  deepseek-moe-16b-chat  mid        0.67      0.51       0.45     +0.73      -0.08
+  deepseek-moe-16b-chat  late       0.66      0.52       0.47     +0.68      -0.01
+  deepseek-v2-lite       early      0.79      0.55       0.56     +0.03      -0.01
+  deepseek-v2-lite       mid        0.94      0.62       0.52     +0.41      -0.05
+  deepseek-v2-lite       late       0.95      0.71       0.58     +0.64      +0.03
+  llama-4-scout          early      0.80      0.49       0.51     +0.01      +0.00
+  llama-4-scout          mid        0.92      0.60       0.56     +0.17      +0.05
+  llama-4-scout          late       0.93      0.78       0.68     +0.20      +0.17
+  mixtral-8x7b           early      0.79      0.55       0.49     +0.19      -0.07
+  mixtral-8x7b           mid        0.91      0.67       0.51     +0.32      +0.01
+  mixtral-8x7b           late       0.91      0.70       0.60     +0.28      +0.06
+  olmoe-1b-7b            early      0.78      0.52       0.48     +0.18      -0.04
+  olmoe-1b-7b            mid        0.91      0.63       0.61     +0.34      -0.02
+  olmoe-1b-7b            late       0.92      0.64       0.53     +0.65      +0.02
+  qwen1.5-moe-a2.7b-chat early      0.63      0.54       0.53     +0.27      -0.08
+  qwen1.5-moe-a2.7b-chat mid        0.73      0.61       0.53     +0.26      +0.05
+  qwen1.5-moe-a2.7b-chat late       0.74      0.62       0.57     +0.49      +0.04
+  ------------------------------------------------------------
+  POOLED median          early      0.79      0.53       0.50     +0.18      -0.05
+  POOLED median          mid        0.91      0.61       0.53     +0.33      -0.00
+  POOLED median          late       0.92      0.67       0.57     +0.56      +0.04
+
+========================================================================================
+Experiment 1(A) re-run: residual decision-direction cosine at the
+decode-best residual layer (principled layer, per model)
+========================================================================================
+  model                   layer   decode  persuasion  cross-family  null|cos|95
+  deepseek-moe-16b-chat      13     0.68       +0.73         -0.10         0.60
+  deepseek-v2-lite           22     0.95       +0.64         +0.04         0.23
+  llama-4-scout              35     0.93       +0.13         +0.19         0.15
+  mixtral-8x7b               20     0.92       +0.34         +0.07         0.13
+  olmoe-1b-7b                12     0.93       +0.62         +0.04         0.21
+  qwen1.5-moe-a2.7b-chat     15     0.75       +0.34         +0.11         0.20
+  POOLED median                                +0.48         +0.05
