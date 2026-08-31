@@ -2,8 +2,6 @@
 
 Official code and data for our **EMNLP 2026 Main Conference** paper.
 
-**Yubin Im**, **Myeonghyun Kim**, **Seongmin Kim**, and **Haehyun Cho**
-
 **Paper:** Coming soon · **Code and data:** This repository
 
 ## Overview
