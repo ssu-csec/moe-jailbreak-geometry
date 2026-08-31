@@ -25,7 +25,6 @@ Raw activation caches and routing extractions are not part of the bundle because
 ├── 02-data/                   Processed per-cell logs and pooled JSONs
 │   ├── routing-analysis/      Routing, RSA, re-ID, layerwise, etc. logs
 │   └── dense-baseline/        Dense-model control (Llama-3.1-8B, Mistral-7B): LOAO, AUROC, within-family, second-judge logs + per-cell labels
-├── figures/                   Rendered figure outputs (PDF + PNG)
 ├── requirements.txt
 ├── LICENSE
 └── README.md
